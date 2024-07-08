@@ -97,3 +97,49 @@ section h2 {
 section p {
     font-size: 1.2em;
 }
+
+.ranking-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Added space between the boxes */
+    margin-top: 20px;
+}
+
+.ranking-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px; /* Increased width */
+    text-align: center;
+}
+
+.ranking-box h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.ranking-box ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.ranking-box ol li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.description {
+    margin-top: 40px;
+}
+
+.description h2 {
+    font-size: 2em;
+}
+
+.description p {
+    font-size: 1.2em;
+}

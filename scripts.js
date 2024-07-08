@@ -76,3 +76,47 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .addTo(map);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('section');
+    const nav = document.querySelector('nav');
+
+    // Smooth scroll for navbar links
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetSection.offsetTop - nav.offsetHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Parallax scroll effect for hero image
+    window.addEventListener('scroll', function () {
+        const heroImage = document.querySelector('.hero-image');
+        const scrollPosition = window.scrollY;
+        heroImage.style.opacity = scrollPosition > 50 ? 1 : 0;
+    });
+
+    // Highlight the relevant section of the navbar
+    window.addEventListener('scroll', function () {
+        let currentSection = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - nav.offsetHeight;
+            if (window.scrollY >= sectionTop) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
+});

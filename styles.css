@@ -75,7 +75,6 @@ nav ul li a.active {
     color: #fff;
 }
 
-
 .hero-image {
     width: 100%;
     height: 100vh;
@@ -89,19 +88,23 @@ nav ul li a.active {
 
 .section {
     padding: 80px 20px;
+    text-align: center;
 }
 
-.section-alt {
-    background-color: #f9f9f9;
-}
-
-section h2 {
+.section h2 {
     font-size: 2em;
     margin-top: 0;
 }
 
-section p {
+.section p {
     font-size: 1.2em;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.section-alt {
+    background-color: #f9f9f9;
 }
 
 .ranking-boxes {
@@ -148,6 +151,9 @@ section p {
 
 .description p {
     font-size: 1.2em;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .map-container {
@@ -169,7 +175,7 @@ section p {
 
 .county-section {
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 10%;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -178,7 +184,7 @@ section p {
 }
 
 .county-heading {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -190,8 +196,7 @@ section p {
     background-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .county-quote {
@@ -204,9 +209,8 @@ section p {
 
 .county-text {
     font-size: 1.2em;
-    width: 80%;
-    max-width: 800px;
     margin: 0 auto 40px;
+    text-align: left;
 }
 
 .event-boxes {

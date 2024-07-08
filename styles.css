@@ -18,7 +18,7 @@ header {
 }
 
 header h1 {
-    font-size: 6em; /* Feel free to adjust header font size as necessary */
+    font-size: 6em;
 }
 
 header::before {
@@ -38,7 +38,7 @@ header::before {
 
 nav {
     background-color: #333;
-    padding: 20px 0; /* Increased padding for more vertical space */
+    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -101,7 +101,7 @@ section p {
 .ranking-boxes {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Added space between the boxes */
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -111,7 +111,7 @@ section p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
-    width: 300px; /* Increased width */
+    width: 300px;
     text-align: center;
 }
 
@@ -152,10 +152,53 @@ section p {
 }
 
 #map {
-    width: 80%; /* Map takes up 80% of the page width */
-    height: 600px; /* Adjust height as needed */
+    width: 80%;
+    height: 600px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.county-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.county-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.county-image {
+    width: 80%;
+    max-width: 800px;
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.county-quote {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.county-text {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 40px;
 }

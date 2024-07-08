@@ -247,3 +247,22 @@ nav ul li a.active {
 .event-box ul li {
     margin: 5px 0;
 }
+
+.ranking-descriptions {
+    display: flex; /* Makes the descriptions side by side */
+    justify-content: center;
+    gap: 50px; /* Adjust spacing between descriptions */
+
+
+}
+
+.description-box {
+    flex: 1; /* Allows the boxes to expand equally within the flex container */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+/* Optional: Add some padding and border for better visibility */
+.old-description, .new-description {
+    padding: 20px;
+    border: 1px solid #ccc;
+}

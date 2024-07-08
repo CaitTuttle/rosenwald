@@ -266,3 +266,64 @@ nav ul li a.active {
     padding: 20px;
     border: 1px solid #ccc;
 }
+
+.question-sections {
+    margin: 20px;
+}
+
+.question-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.county-text {
+    font-size: 1em;
+    line-height: 1.5;
+}
+/*popup styining */
+.popup {
+    position: relative;
+    display: inline-block;
+    color: #007BFF; /* Highlight color for the word */
+    cursor: pointer;
+}
+
+.popupbox ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent the list */
+    margin: 0; /* Remove default margin */
+}
+
+.popup .popupbox {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.popup .popupbox::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the pop-up */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.popup:hover .popupbox {
+    visibility: visible;
+    opacity: 1;
+}

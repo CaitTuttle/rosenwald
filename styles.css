@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.ibb.co/M7w7yXn/2010-06-Nov-Dec-Statements-03.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section {
+    padding: 80px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.section-alt {
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+section:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}

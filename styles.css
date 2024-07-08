@@ -148,11 +148,12 @@ section p {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    width: 100%;
 }
 
-.map-container iframe {
-    width: 80%;
-    height: 650px;
+#map {
+    width: 80%; /* Map takes up 80% of the page width */
+    height: 600px; /* Adjust height as needed */
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

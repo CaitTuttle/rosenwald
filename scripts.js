@@ -120,3 +120,37 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+const listItems = document.querySelectorAll('#old-ranking li');
+const listItems2 = document.querySelectorAll(' #new-ranking li');
+
+const showMoreButton = document.getElementById('show-more');
+
+// Initially hide all items beyond the 10th
+listItems.forEach((item, index) => {
+    if (index >= 10) {
+        item.style.display = 'none';
+    }
+});
+
+listItems2.forEach((item, index) => {
+    if (index >= 10) {
+        item.style.display = 'none';
+    }
+});
+// Toggle the display of the remaining items on button click
+showMoreButton.addEventListener('click', function() {
+    const isShowingAll = showMoreButton.textContent === 'Show Less';
+
+    listItems.forEach((item, index) => {
+        if (index >= 10) {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        }
+    });
+    listItems2.forEach((item, index) => {
+        if (index >= 10) {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        }
+    });
+
+    showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
+});

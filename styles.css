@@ -143,3 +143,17 @@ section p {
 .description p {
     font-size: 1.2em;
 }
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 650px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

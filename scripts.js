@@ -154,20 +154,41 @@ showMoreButton.addEventListener('click', function() {
 
     showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
 });
-let currentIndex = 0;
 
-function moveSlides(direction) {
-    const slides = document.querySelector('.carousel-slide');
+const slideIndices = { 1: 0, 2: 0 }; // Initialize slide indices for carousels
+
+function moveSlides(direction, carouselId) {
+    const slides = document.querySelector(`#carousel${carouselId} .carousel-slide`);
     const totalSlides = slides.children.length;
-    
-    currentIndex += direction;
-    
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
+
+    slideIndices[carouselId] += direction;
+
+    if (slideIndices[carouselId] < 0) {
+        slideIndices[carouselId] = totalSlides - 1;
+    } else if (slideIndices[carouselId] >= totalSlides) {
+        slideIndices[carouselId] = 0;
     }
-    
-    const newTransform = -currentIndex * 100;
+
+    const newTransform = -slideIndices[carouselId] * 100;
     slides.style.transform = `translateX(${newTransform}%)`;
+
+    // Update indicators
+    updateIndicators(carouselId);
+}
+
+function currentSlide(slideNumber, carouselId) {
+    slideIndices[carouselId] = slideNumber - 1;
+    moveSlides(0, carouselId); // Move to the specified slide
+}
+
+// Update indicators based on the current slide
+function updateIndicators(carouselId) {
+    const indicators = document.querySelectorAll(`#carousel${carouselId} .indicator`);
+    indicators.forEach((indicator, index) => {
+        if (index === slideIndices[carouselId]) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
 }

@@ -326,53 +326,35 @@ nav ul li a.active {
 .popup:hover .popupbox {
     visibility: visible;
     opacity: 1;
-}
-.carousel {
+    
+}.carousel-container {
     position: relative;
-    max-width: 600px;
+    max-width: 600px; /* Adjust as needed */
     margin: auto;
     overflow: hidden;
-}
 
-.carousel-container {
-    overflow: hidden;
-    width: 100%;
 }
 
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Smooth sliding effect */
 }
 
 .carousel-item {
-    flex: 1 0 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-.caption {
-    text-align: center;
-    padding: 10px;
-    color: black;
-    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-button {
     position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
     z-index: 1;
 }
 
@@ -382,4 +364,33 @@ nav ul li a.active {
 
 .next {
     right: 0;
+}
+
+.carousel-indicators {
+    text-align: center;
+    padding: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    background-color: #bbb;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #717171;
+}
+
+.caption {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

@@ -154,3 +154,21 @@ showMoreButton.addEventListener('click', function() {
 
     showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
 });
+
+let currentIndex = 0;
+
+function moveSlides(direction) {
+    const slides = document.querySelector('.carousel-container');
+    const totalSlides = slides.children[0].children.length; // Accessing the number of images inside .carousel-slide
+    
+    currentIndex += direction;
+    
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+    
+    const newTransform = -currentIndex * 100;
+    slides.style.transform = `translateX(${newTransform}%)`;
+}

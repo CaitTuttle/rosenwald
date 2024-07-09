@@ -327,7 +327,6 @@ nav ul li a.active {
     visibility: visible;
     opacity: 1;
 }
-
 .carousel {
     position: relative;
     max-width: 600px;
@@ -336,19 +335,34 @@ nav ul li a.active {
 }
 
 .carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
-.carousel-slide {
+
+.carousel-item {
+    flex: 1 0 100%;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
-.carousel-slide img {
+.carousel-item img {
     width: 100%;
-    min-width: 100%;
     height: auto;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
 }
 
 .carousel-button {
@@ -360,6 +374,7 @@ nav ul li a.active {
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .prev {

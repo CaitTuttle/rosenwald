@@ -154,12 +154,11 @@ showMoreButton.addEventListener('click', function() {
 
     showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
 });
-
 let currentIndex = 0;
 
 function moveSlides(direction) {
-    const slides = document.querySelector('.carousel-container');
-    const totalSlides = slides.children[0].children.length; // Accessing the number of images inside .carousel-slide
+    const slides = document.querySelector('.carousel-slide');
+    const totalSlides = slides.children.length;
     
     currentIndex += direction;
     

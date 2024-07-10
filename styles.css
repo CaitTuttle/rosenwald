@@ -347,7 +347,7 @@ nav ul li a.active {
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 30%;
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
@@ -389,6 +389,6 @@ nav ul li a.active {
     padding: 10px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     text-align: center;
 }

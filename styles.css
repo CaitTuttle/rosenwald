@@ -327,18 +327,17 @@ nav ul li a.active {
     visibility: visible;
     opacity: 1;
     
-}.carousel-container {
+}
+.carousel-container {
     position: relative;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 600px;
     margin: auto;
     overflow: hidden;
-
 }
 
 .carousel-slide {
     display: flex;
-    overflow: hidden;
-    transition: transform 0.5s ease; /* Smooth sliding effect */
+    transition: transform 0.5s ease;
 }
 
 .carousel-item {
@@ -386,10 +385,9 @@ nav ul li a.active {
 }
 
 .caption {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+    color: Black;
     padding: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;

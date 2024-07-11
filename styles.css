@@ -392,3 +392,50 @@ nav ul li a.active {
     width: 95%;
     text-align: center;
 }
+
+.image-quote-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-quote-container img {
+    width: 100%;
+    height: auto;
+}
+
+.quote-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.county-section {
+    margin-bottom: 20px;
+}
+.more-content p {
+    /* The text after the first period will be hidden initially */
+    display: block;
+    overflow: hidden;
+    height: auto;
+    transition: height 0.3s ease;
+}
+
+.more-content.hidden p {
+    height: 1.2em; /* Adjust based on the height of one line of text */
+    overflow: hidden;
+}
+
+.more-button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}

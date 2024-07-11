@@ -327,9 +327,16 @@
     <section id="counties" class="section section-alt">
         <h2>Rosenwald Counties</h2>
         <div id="map" class="map-container"></div>
-    
         <div class="county-section">
             <h3 class="county-heading">Durham County</h3>
+            <div class="image-quote-container">
+                <img src="https://i.ibb.co/cknThJL/A-M-MOORE-M-D-PRESIDENT-NORTH-CAROLINA-MUTUAL.jpg" alt="Image 1">
+                <div class="quote-overlay">
+                    "“The biggest thing we can do, and this seems to me to be our mission, is to empty our lives and character into our children, thereby making them better and wiser citizens than we are or had an opportunity to be.”-Aaron McDuffie Moore (Durham doctor, educator, philanthropist)"</div>
+                </div>
+                <p class="county-text">There were a total of 18 Rosenwald schools in Durham, NC. The funding was obtained by Aaron McDuffie Moore.
+                </p>
+
             <div class="carousel-container" id="carousel1">
                 <h3>Russel School</h3>
                 <button class="carousel-button prev" onclick="moveSlides(-1, 1)">&#10094;</button>
@@ -383,9 +390,12 @@
                     <span class="indicator" onclick="currentSlide(8, 1)"></span>
                     <span class="indicator" onclick="currentSlide(9, 1)"></span>
                 </div>
-            </div>
-            <blockquote class="county-quote">"This is a quote about Durham County."</blockquote>
+            </div>            
             <p class="county-text">Additional smaller text about Durham County goes here.</p>
+            <div class="more-content">
+                <p>Here is some more content about Durham County that will be initially hidden. More hidden content goes here.</p>
+                <div class="more-button" id="show-more">Show More</div>
+            </div>
         </div>
     
         <div class="county-section">
@@ -442,7 +452,7 @@
                             Negroes: $838 
                             Public: $2,890
                             Rosenwald: $1,100</div>
-                    </div>
+                    </div> 
                 </div>
                 <button class="carousel-button next" onclick="moveSlides(1, 2)">&#10095;</button>
                 <div class="carousel-indicators">

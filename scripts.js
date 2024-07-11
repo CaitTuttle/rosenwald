@@ -119,11 +119,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});
-const listItems = document.querySelectorAll('#old-ranking li');
-const listItems2 = document.querySelectorAll(' #new-ranking li');
+});const listItems = document.querySelectorAll('#old-ranking li');
+const listItems2 = document.querySelectorAll('#new-ranking li');
+const term1 = document.querySelectorAll('.more-content p');  // Corrected selector
 
 const showMoreButton = document.getElementById('show-more');
+const moreContent = document.querySelector('.more-content');
 
 // Initially hide all items beyond the 10th
 listItems.forEach((item, index) => {
@@ -137,7 +138,17 @@ listItems2.forEach((item, index) => {
         item.style.display = 'none';
     }
 });
-// Toggle the display of the remaining items on button click
+
+let foundPeriod = false;
+term1.forEach((item) => {
+    if (foundPeriod) {
+        item.style.display = 'none';
+    } else if (item.textContent.includes('.')) {
+        foundPeriod = true; // Start hiding after this point
+        item.style.display = 'none';
+    }
+});
+
 showMoreButton.addEventListener('click', function() {
     const isShowingAll = showMoreButton.textContent === 'Show Less';
 
@@ -146,14 +157,23 @@ showMoreButton.addEventListener('click', function() {
             item.style.display = isShowingAll ? 'none' : 'list-item';
         }
     });
+
     listItems2.forEach((item, index) => {
         if (index >= 10) {
             item.style.display = isShowingAll ? 'none' : 'list-item';
         }
     });
 
+    term1.forEach((item) => {
+        if (foundPeriod) {
+            item.style.display = isShowingAll ? 'block' : 'none';
+        }
+    });
+
+    moreContent.classList.toggle('expanded', !isShowingAll);
     showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
 });
+
 
 const slideIndices = { 1: 0, 2: 0 }; // Initialize slide indices for carousels
 
@@ -192,3 +212,6 @@ function updateIndicators(carouselId) {
         }
     });
 }
+
+
+

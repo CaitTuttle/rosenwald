@@ -158,23 +158,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Info1 Section
-    const info1Paragraphs = document.querySelectorAll('.info1 p');
+    const info1Content = document.querySelectorAll('.info1 .more-content');
+    const moreContentOverlay = document.querySelector('.info1 .more-content-over');
+    const moreContentPic = document.querySelector('.info1 .more-content-pic');
     const showMoreInfo1 = document.getElementById('show-more-info1');
-
-    info1Paragraphs.forEach((p, index) => {
-        if (index > 0) {
-            p.style.display = 'none';
-        }
+    
+    info1Content.forEach((content) => {
+        content.style.display = 'none';
     });
+    
 
     showMoreInfo1.addEventListener('click', function() {
         const isShowingAll = showMoreInfo1.textContent === 'Show Less';
 
-        info1Paragraphs.forEach((p, index) => {
-            if (index > 0) {
-                p.style.display = isShowingAll ? 'none' : 'block';
-            }
+        info1Content.forEach((content) => {
+            content.style.display = isShowingAll ? 'none' : 'block';
         });
+        
+        moreContentPic.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentOverlay.style.display = isShowingAll ? 'none' : 'block';
 
         showMoreInfo1.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });

@@ -425,11 +425,35 @@ nav ul li a.active {
     color: white;
     padding: 10px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em; /* Adjust the font size as needed */
 }
 
 .county-section {
     margin-bottom: 20px;
+
+}
+.more-content {
+    display: none;
+    text-align: left;
+
+}
+
+.more-content-over {
+    position: relative;
+    bottom: 0;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    display: none;
+}
+
+.more-content-pic {
+    position: relative;
+    display: none;
 
 }

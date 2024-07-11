@@ -119,59 +119,66 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});const listItems = document.querySelectorAll('#old-ranking li');
-const listItems2 = document.querySelectorAll('#new-ranking li');
-const term1 = document.querySelectorAll('.more-content p');  // Corrected selector
-
-const showMoreButton = document.getElementById('show-more');
-const moreContent = document.querySelector('.more-content');
-
-// Initially hide all items beyond the 10th
-listItems.forEach((item, index) => {
-    if (index >= 10) {
-        item.style.display = 'none';
-    }
 });
 
-listItems2.forEach((item, index) => {
-    if (index >= 10) {
-        item.style.display = 'none';
-    }
-});
 
-let foundPeriod = false;
-term1.forEach((item) => {
-    if (foundPeriod) {
-        item.style.display = 'none';
-    } else if (item.textContent.includes('.')) {
-        foundPeriod = true; // Start hiding after this point
-        item.style.display = 'none';
-    }
-});
+document.addEventListener('DOMContentLoaded', () => {
+    // Old Ranking Section
+    const listItems = document.querySelectorAll('#old-ranking li');
+    const listItems2 = document.querySelectorAll('#new-ranking li');   
+    const showMoreButton = document.getElementById('show-more-rank');
 
-showMoreButton.addEventListener('click', function() {
-    const isShowingAll = showMoreButton.textContent === 'Show Less';
-
-    listItems.forEach((item, index) => {
+     listItems.forEach((item, index) => {
         if (index >= 10) {
-            item.style.display = isShowingAll ? 'none' : 'list-item';
+            item.style.display = 'none';
         }
     });
-
+    
     listItems2.forEach((item, index) => {
         if (index >= 10) {
-            item.style.display = isShowingAll ? 'none' : 'list-item';
+            item.style.display = 'none';
         }
     });
 
-    term1.forEach((item) => {
-        if (foundPeriod) {
-            item.style.display = isShowingAll ? 'block' : 'none';
+    showMoreButton.addEventListener('click', function() {
+        const isShowingAll = showMoreButton.textContent === 'Show Less';
+    
+        listItems.forEach((item, index) => {
+            if (index >= 10) {
+                item.style.display = isShowingAll ? 'none' : 'list-item';
+            }
+        });
+        listItems2.forEach((item, index) => {
+            if (index >= 10) {
+                item.style.display = isShowingAll ? 'none' : 'list-item';
+            }
+        });
+    
+        showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+
+    // Info1 Section
+    const info1Paragraphs = document.querySelectorAll('.info1 p');
+    const showMoreInfo1 = document.getElementById('show-more-info1');
+
+    info1Paragraphs.forEach((p, index) => {
+        if (index > 0) {
+            p.style.display = 'none';
         }
     });
 
-    moreContent.classList.toggle('expanded', !isShowingAll);
-    showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    showMoreInfo1.addEventListener('click', function() {
+        const isShowingAll = showMoreInfo1.textContent === 'Show Less';
+
+        info1Paragraphs.forEach((p, index) => {
+            if (index > 0) {
+                p.style.display = isShowingAll ? 'none' : 'block';
+            }
+        });
+
+        showMoreInfo1.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+
 });
 
 
@@ -212,6 +219,3 @@ function updateIndicators(carouselId) {
         }
     });
 }
-
-
-

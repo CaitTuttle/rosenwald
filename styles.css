@@ -453,7 +453,7 @@ nav ul li a.active {
 }
 
 .more-content-pic {
-    position: relative;
+    position: center;
     display: none;
 
 }

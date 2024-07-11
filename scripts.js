@@ -159,11 +159,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Info1 Section
     const info1Content = document.querySelectorAll('.info1 .more-content');
+    const info2Content = document.querySelectorAll('.info2 .more-content');
     const moreContentOverlay = document.querySelector('.info1 .more-content-over');
+    const moreContentOverlay2 = document.querySelector('.info2 .more-content-over');
     const moreContentPic = document.querySelector('.info1 .more-content-pic');
+    const moreContentPic2 = document.querySelector('.info2 .more-content-pic');
+
     const showMoreInfo1 = document.getElementById('show-more-info1');
+    const showMoreInfo2 = document.getElementById('show-more-info2');
+
     
     info1Content.forEach((content) => {
+        content.style.display = 'none';
+    });
+    info2Content.forEach((content) => {
         content.style.display = 'none';
     });
     
@@ -180,6 +189,19 @@ document.addEventListener('DOMContentLoaded', () => {
         moreContentOverlay.style.display = isShowingAll ? 'none' : 'block';
 
         showMoreInfo1.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+    showMoreInfo2.addEventListener('click', function() {
+        const isShowingAll = showMoreInfo2.textContent === 'Show Less';
+
+        info2Content.forEach((content) => {
+            content.style.display = isShowingAll ? 'none' : 'block';
+        });
+        
+        moreContentPic2.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentOverlay2.style.display = isShowingAll ? 'none' : 'block';
+
+        showMoreInfo2.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 
 });

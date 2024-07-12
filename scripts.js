@@ -167,6 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const moreContentPic = document.querySelector('.info1 .more-content-pic');
     const moreContentPic2 = document.querySelector('.info2 .more-content-pic');
     const moreContentPic3 = document.querySelector('.info3 .more-content-pic');
+    const moreContentBox1 = document.querySelector('.info1 .more-content-boxes');
+    const moreContentBox2 = document.querySelector('.info2 .more-content-boxes');
+    const moreContentBox3 = document.querySelector('.info3 .more-content-boxes');
+
     const showMoreInfo1 = document.getElementById('show-more-info1');
     const showMoreInfo2 = document.getElementById('show-more-info2');
     const showMoreInfo3 = document.getElementById('show-more-info3');
@@ -193,6 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         moreContentOverlay.style.display = isShowingAll ? 'none' : 'block';
 
+        moreContentBox1.style.display = isShowingAll ? 'none' : 'block';
+
         showMoreInfo1.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
     showMoreInfo2.addEventListener('click', function() {
@@ -205,6 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
         moreContentPic2.style.display = isShowingAll ? 'none' : 'block';
 
         moreContentOverlay2.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentBox2.style.display = isShowingAll ? 'none' : 'block';
 
         showMoreInfo2.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
@@ -219,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         moreContentPic3.style.display = isShowingAll ? 'none' : 'block';
 
         moreContentOverlay3.style.display = isShowingAll ? 'none' : 'block';
-
+        moreContentBox3.style.display = isShowingAll ? 'none' : 'block';
         showMoreInfo3.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 

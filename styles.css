@@ -270,6 +270,13 @@ nav ul li a.active {
     display: flex; /* Makes the descriptions side by side */
     justify-content: center;
     gap: 50px; /* Adjust spacing between descriptions */
+    text-align: center;
+    margin: 40px 10%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 .description-box {
@@ -441,25 +448,46 @@ nav ul li a.active {
     text-align: left;
 
 }
-
-.more-content {
-    display: none;
-    text-align: left;
-
+.more-content-all {
+    gap: 40px;
+    margin-top: 20px;
 }
 
-.more-content ul{
+.more-content-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.more-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left; /* Left align text */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: row; /* Arrange children in a row */
+    justify-content: space-between; /* Distribute space between image and text */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the image and text */
+    margin: 40px auto; /* Center the content box */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.more-content img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.more-content ul {
     list-style-type: disc;
     padding-left: 20px;
     text-align: left;
     margin: 10px 0 0;
-
 }
 
 .more-content-over {
-    position: relative;
-    bottom: 0;
-    width: 95%;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
@@ -470,10 +498,43 @@ nav ul li a.active {
 }
 
 .more-content-pic {
-    position: center;
-    display: none;
-
+    width: 250px; /* Adjust the image size as needed */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.text-content {
+    flex: 1; /* Take up the remaining space */
+}
+
+
+.text-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+.text-content ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
+
+.text-content p {
+    margin: 10px 0; /* Add space between paragraphs */
+}
+
+.info1 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
 .info1 ul {
     list-style: disc inside;
     margin-left: 0; /* Adjust the left margin to your liking */
@@ -483,10 +544,59 @@ nav ul li a.active {
 .info1 li {
     margin-bottom: 10px;
     list-style: disc inside;
-
 }
 
 .info1 ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
+
+.info2 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.info2 ul {
+    list-style: disc inside;
+    margin-left: 0; /* Adjust the left margin to your liking */
+    padding-left: 0;
+}
+
+.info2 li {
+    margin-bottom: 10px;
+    list-style: disc inside;
+}
+
+.info2 ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
+
+.info3 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.info3 ul {
+    list-style: disc inside;
+    margin-left: 0; /* Adjust the left margin to your liking */
+    padding-left: 0;
+}
+
+.info3 li {
+    margin-bottom: 10px;
+    list-style: disc inside;
+}
+
+.info3 ul ul {
     list-style: circle inside;
     margin-left: 20px; /* Adjust the left margin for nested lists */
 }
@@ -515,4 +625,7 @@ ul {
     background-color: rgb(249, 134, 134);
     padding: 5px; /* Optional: add padding for better appearance */
     border-radius: 5px; /* Optional: add rounded corners */
+}
+.text-content {
+    flex: 1; /* Take up the remaining space */
 }

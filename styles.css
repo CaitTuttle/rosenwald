@@ -148,6 +148,7 @@ nav ul li a.active {
 .options.show-all {
     max-height: none;
 }
+
 .more-button {
     display: block;
     text-align: center;
@@ -155,7 +156,6 @@ nav ul li a.active {
     cursor: pointer;
     color: blue;
     position: relative;
-
     text-decoration: underline;
 }
 
@@ -366,6 +366,8 @@ nav ul li a.active {
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 .carousel-button {
@@ -505,6 +507,8 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .text-content {
     flex: 1; /* Take up the remaining space */
 }
@@ -601,6 +605,30 @@ nav ul li a.active {
     margin-left: 20px; /* Adjust the left margin for nested lists */
 }
 
+.info4 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.info4 ul {
+    list-style: disc inside;
+    margin-left: 0; /* Adjust the left margin to your liking */
+    padding-left: 0;
+}
+
+.info4 li {
+    margin-bottom: 10px;
+    list-style: disc inside;
+}
+
+.info4 ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
 ul {
     list-style-type: disc; /* Ensure bullets are displayed */
     padding-left: 20px;    /* Add some left padding to indent the list */
@@ -625,7 +653,4 @@ ul {
     background-color: rgb(249, 134, 134);
     padding: 5px; /* Optional: add padding for better appearance */
     border-radius: 5px; /* Optional: add rounded corners */
-}
-.text-content {
-    flex: 1; /* Take up the remaining space */
 }

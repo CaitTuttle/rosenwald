@@ -510,8 +510,37 @@
 
         <div class="county-section">
             <h3 class="county-heading">Martin County</h3>
-            <div class="county-image" style="background-image: url('https://i.ibb.co/HdF3sXD/Classroom-Diagram.jpg');"></div>
-            <blockquote class="county-quote">"This is a quote about Martin County."</blockquote>
+            <div class="carousel-container" id="carousel4">
+                <button class="carousel-button prev" onclick="moveSlides(-1, 4)">&#10094;</button>
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/THLd0xk/jen1.webp" alt="Image 1.4">
+                        <div class="caption"> The Hamilton School is a regional, nonprofit economic development organization. Built in 1914 and operated until 1960. </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/19bVK91/Classroom-Diagram-1.webp" alt="Image 2.4">
+                        <div class="caption">The building had 4 insulated rooms constructed in the original building, and then 2 rooms were added because so many students were coming to attend the school. </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co/9YWRLnf/6508a9f598e5b-image.jpg" alt="Image 3.4">
+                        <div class="caption"> The Hamilton School before renovations.</div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.youtube.com/watch?v=BgOQpfgB3Us&t=640s" target="_blank" class="video-thumbnail">
+                            <img src="https://i.ibb.co/HnrHyhH/Screenshot-2024-07-12-at-2-18-53-PM.png" alt="YouTube Video Thumbnail">
+                            <div class="play-button">▶</div>
+                        </a>                        
+                        <div class="caption">The building had 4 insulated rooms constructed in the original building, and then 2 rooms were added because so many students were coming to attend the school. </div>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveSlides(1, 4)">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator" onclick="currentSlide(1, 4)"></span>
+                    <span class="indicator" onclick="currentSlide(2, 4)"></span>
+                    <span class="indicator" onclick="currentSlide(3, 4)"></span>
+                    <span class="indicator" onclick="currentSlide(4, 4)"></span>
+                </div>
+            </div>
             <h4 > More interesting history from Martin County </h4>
             <p class="county-text">Williamston lies in the heart of Eastern North Carolina's Black Belt on the southern bank of the Roanoke River, one hundred miles east of the state capital of Raleigh and nearly as far south of Norfolk, Virginia.             </p>
             <ul>
@@ -603,7 +632,6 @@
                     <span class="indicator" onclick="currentSlide(2, 2)"></span>
                     <span class="indicator" onclick="currentSlide(3, 2)"></span>
                     <span class="indicator" onclick="currentSlide(4, 2)"></span>
-
                 </div>
             </div>
         </div>
@@ -614,8 +642,56 @@
     </section>
 
     <section id="interviews" class="section">
+        <div class="county-section">
         <h2>Rosenwald Interviews</h2>
-        <p>Interviews with key figures...</p>
+        <div class="more-content-all">
+            <div class="info4">
+                <h3>Mother of a Virginia Native</h3>
+                <p>The interviewee described how much she enjoyed her experience as a student. She understood the expectations that were placed on her by her teachers and parents and, from there, was able to teach the same to her children.</p>
+                <div class="more-content-boxes">
+                <div class="more-content">
+
+                <p class="more-content">Community Engagement</p>
+                <ul class="more-content">
+                    <li>“Well, the community was close-knit and everyone in the community knew each other. We went to each other's houses, we walked with each other to choir rehearsal and then the church.”</li>
+                    <li>“It was a nice neighborhood; everyone was friendly. If you did something that was wrong, you knew you were going to get in trouble because your aunts told your dad, your neighbor told your dad, or your neighbor themselves would get on you. So you knew not to mess up.”</li>
+                </ul>
+                <p class="more-content">Enriched Learning</p>
+                <ul class="more-content">
+                    <li>“The only thing that helped me was home economics; I learned how to sew and to cook.” We had English and taught the proper way to talk.”</li>
+                    <li>“We had plays in the school; each holiday, we had a play at the end of the school. I participated in all the plays through school.”
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div id="show-more-info4" class="more-button">Show More</div>
+        </div>
+        <div class="more-content-all">
+            <div class="info4">
+            <h3>Mother of a Virginia Native</h3>
+            <p>The interviewee described how much she enjoyed her experience as a student. She understood the expectations that were placed on her by her teachers and parents and, from there, was able to teach the same to her children.</p>
+            <h4>Hollistic Strategies Employed</h4>
+            <div class="more-content-boxes">
+            <div class="more-content">
+            <p class="more-content">Community Engagement</p>
+                    <ul class="more-content">
+                        <li>“Well, the community was close-knit and everyone in the community knew each other. We went to each other's houses, we walked with each other to choir rehearsal and then the church.”</li>
+                        <li>The Caswell Training School was a school that operated from 1934 to 1969. According to the book “Their Highest Potential,” this school focuses on the importance of dedicated teachers and the principal who believed their jobs extended well beyond the classroom and to the community’s parents, who worked to support the school. According to Vanessa Walker (author of the book), the relationship between the school and the community was mutually dependent. 
+                    </ul>
+                </li>
+            <p class="more-content">Enriched Learning</p>
+            <ul class="more-content">
+                <li>“The only thing that helped me was home economics; I learned how to sew and to cook.” We had English and taught the proper way to talk.”</li>
+            </ul>
+        </li>
+            </div>
+        </div>
+    </div>
+    <div id=show-more-info4 class="more-button">Show More</div>
+    </div>
+</div>
+</div>
     </section>
 
     <section id="discussion" class="section section-alt">
@@ -651,6 +727,7 @@
                 </ul>
             </div>
         </div>
+        
     </section>
 
     <script src="scripts.js"></script>

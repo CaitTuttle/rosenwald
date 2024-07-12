@@ -150,9 +150,12 @@ nav ul li a.active {
 }
 .more-button {
     display: block;
+    text-align: center;
     margin-top: 10px;
     cursor: pointer;
     color: blue;
+    position: relative;
+
     text-decoration: underline;
 }
 
@@ -431,11 +434,25 @@ nav ul li a.active {
 
 .county-section {
     margin-bottom: 20px;
+}
+
+.county-section ul {
+    margin-bottom: 20px;
+    text-align: left;
 
 }
+
 .more-content {
     display: none;
     text-align: left;
+
+}
+
+.more-content ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 10px 0 0;
 
 }
 
@@ -456,4 +473,46 @@ nav ul li a.active {
     position: center;
     display: none;
 
+}
+.info1 ul {
+    list-style: disc inside;
+    margin-left: 0; /* Adjust the left margin to your liking */
+    padding-left: 0;
+}
+
+.info1 li {
+    margin-bottom: 10px;
+    list-style: disc inside;
+
+}
+
+.info1 ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
+
+ul {
+    list-style-type: disc; /* Ensure bullets are displayed */
+    padding-left: 20px;    /* Add some left padding to indent the list */
+}
+
+#old-ranking .highlighted-item1 {
+    background-color: rgb(137, 216, 137);
+    padding: 5px; /* Optional: add padding for better appearance */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+#new-ranking .highlighted-item1 {
+    background-color: rgb(137, 216, 137);
+    padding: 5px; /* Optional: add padding for better appearance */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+#old-ranking .highlighted-item2 {
+    background-color: rgb(249, 134, 134);
+    padding: 5px; /* Optional: add padding for better appearance */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+#new-ranking .highlighted-item2 {
+    background-color: rgb(249, 134, 134);
+    padding: 5px; /* Optional: add padding for better appearance */
+    border-radius: 5px; /* Optional: add rounded corners */
 }

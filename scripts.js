@@ -160,14 +160,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Info1 Section
     const info1Content = document.querySelectorAll('.info1 .more-content');
     const info2Content = document.querySelectorAll('.info2 .more-content');
+    const info3Content = document.querySelectorAll('.info3 .more-content');
     const moreContentOverlay = document.querySelector('.info1 .more-content-over');
     const moreContentOverlay2 = document.querySelector('.info2 .more-content-over');
+    const moreContentOverlay3 = document.querySelector('.info3 .more-content-over');
     const moreContentPic = document.querySelector('.info1 .more-content-pic');
     const moreContentPic2 = document.querySelector('.info2 .more-content-pic');
-
+    const moreContentPic3 = document.querySelector('.info3 .more-content-pic');
     const showMoreInfo1 = document.getElementById('show-more-info1');
     const showMoreInfo2 = document.getElementById('show-more-info2');
-
+    const showMoreInfo3 = document.getElementById('show-more-info3');
     
     info1Content.forEach((content) => {
         content.style.display = 'none';
@@ -176,6 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
         content.style.display = 'none';
     });
     
+    info3Content.forEach((content) => {
+        content.style.display = 'none';
+    });
 
     showMoreInfo1.addEventListener('click', function() {
         const isShowingAll = showMoreInfo1.textContent === 'Show Less';
@@ -204,10 +209,24 @@ document.addEventListener('DOMContentLoaded', () => {
         showMoreInfo2.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 
+    showMoreInfo3.addEventListener('click', function() {
+        const isShowingAll = showMoreInfo3.textContent === 'Show Less';
+
+        info3Content.forEach((content) => {
+            content.style.display = isShowingAll ? 'none' : 'block';
+        });
+        
+        moreContentPic3.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentOverlay3.style.display = isShowingAll ? 'none' : 'block';
+
+        showMoreInfo3.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+
 });
 
 
-const slideIndices = { 1: 0, 2: 0 }; // Initialize slide indices for carousels
+const slideIndices = { 1: 0, 2: 0 , 3: 0}; // Initialize slide indices for carousels
 
 function moveSlides(direction, carouselId) {
     const slides = document.querySelector(`#carousel${carouselId} .carousel-slide`);

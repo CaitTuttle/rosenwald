@@ -149,6 +149,8 @@ toggleContent('show-more-info2', '.info2 .more-content', '.info2 .more-content-p
 toggleContent('show-more-info3', '.info3 .more-content', '.info3 .more-content-pic', '.info3 .more-content-over', '.info3 .more-content-boxes');
 toggleContent('show-more-info4', '.info4 .more-content', '.info4 .more-content-pic', '.info4 .more-content-over', '.info4 .more-content-boxes');
 toggleContent('show-more-info5', '.info5 .more-content', '.info5 .more-content-pic', '.info5 .more-content-over', '.info5 .more-content-boxes');
+toggleContent('show-more-rank', '.more-ranking');
+
 
 
 const slideIndices = { 1: 0, 2: 0 , 3: 0, 4: 0}; // Initialize slide indices for carousels

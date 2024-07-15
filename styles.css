@@ -527,6 +527,9 @@ nav ul li a.active {
     margin: 10px 0; /* Add space between paragraphs */
 }
 
+.more-ranking {
+    display: none;
+}
 
 .info1 {
     background: #fff;
@@ -685,7 +688,11 @@ ul ul {
     border-radius: 5px; /* Optional: add rounded corners */
 }
 
-
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .bullet-section {
     text-align: center; 
     padding: 20px 0;
@@ -710,6 +717,7 @@ ul ul {
     border-color: #003366;
     transform: translateY(-5px);
 }
+
 
 .bullet-title {
     display: flex;

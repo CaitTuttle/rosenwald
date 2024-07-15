@@ -490,7 +490,6 @@ nav ul li a.active {
     padding-left: 20px;
     text-align: left;
     margin: 10px 0 0;
-    border: 1px solid #ddd;
     border-radius: 10px;
 }
 
@@ -688,11 +687,8 @@ ul ul {
     border-radius: 5px; /* Optional: add rounded corners */
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
+
 .bullet-section {
     text-align: center; 
     padding: 20px 0;
@@ -708,7 +704,6 @@ ul ul {
     padding: 10px;
     margin-bottom: 20px;
     transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
-    max-width: 500px;
     margin: 0 auto;   /* Centers the boxes */
 }
 
@@ -754,16 +749,29 @@ ul ul {
     opacity: 0.9;
     line-height: 1.6;
     text-align: left;
-    max-width: 600px;
 }
 
+.bullet-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.bullet-content img {
+    margin-right: 20px; /* Space between image and text */
+}
+
+.bullet-content ul {
+    flex-grow: 1;
+    width: 100%; /* Ensure it takes the remaining width */
+
+}
 .bullet-toggle:checked + .bullet-title + .bullet-desc {
     display: block;
 }
 
 .bullet-column {
     display: inline-block;
-    width: 48%;
     padding: 10px 1%;
     box-sizing: border-box;
     text-align: left;
@@ -776,4 +784,77 @@ ul ul {
 
 .bullet-center .dropdown-container {
     max-width: 400px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.grid-item {
+    background:  #e1573e;
+    border: 2px solid rgba(0, 51, 102, 0.2);
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+    color: #FFFFFF;
+}
+.grid-item:hover {
+    transform: rotateY(10deg) translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+.grid-item:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+.grid-item h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.grid-item h2, .grid-item p {
+    transform: scale(0.95);
+    opacity: 0.8;
+    transition: all 0.4s ease-out;
+}
+.grid-item:hover h2, .grid-item:hover p {
+    transform: scale(1);
+    opacity: 1;
+}
+.grid-item:hover p {
+    display: block;
+}
+.grid-item::before {
+    content: "+";
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    transition: transform 0.4s ease-out;
+}
+.grid-item.expanded::before {
+    transform: rotate(45deg);
+}
+.grid-item p {
+    display: none;
+    transition: opacity 0.4s ease;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 10px;
 }

@@ -190,3 +190,37 @@ function updateIndicators(carouselId) {
         }
     });
 }
+
+
+const gridItems = Array.from(document.querySelectorAll(".grid-item"));
+    
+gridItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        const adjacentIndex = index % 2 === 0 ? index + 1 : index - 1;
+        const adjacentItem = gridItems[adjacentIndex];
+
+        const isExpanded = item.classList.contains('expanded');
+
+        // Handle all items
+        gridItems.forEach((otherItem, otherIndex) => {
+            // Clear any previous expansion
+            otherItem.classList.remove('expanded');
+
+            let otherItemParagraphs = otherItem.querySelectorAll("p"); // Get all paragraphs in the other items
+            otherItemParagraphs.forEach(paragraph => {
+                paragraph.style.display = "none";
+            });
+
+            // If the current item was not previously expanded, expand it and its adjacent item
+            if (otherItem === item && !isExpanded) {
+                otherItem.classList.add('expanded');
+                otherItemParagraphs.forEach(paragraph => {
+                    paragraph.style.display = "block";
+                });
+            }
+            if (otherItem === adjacentItem && !isExpanded) {
+                otherItem.classList.add('expanded');
+            }
+        });
+    });
+});

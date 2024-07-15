@@ -162,18 +162,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const info2Content = document.querySelectorAll('.info2 .more-content');
     const info3Content = document.querySelectorAll('.info3 .more-content');
     const info4Content = document.querySelectorAll('.info4 .more-content');
+    const info5Content = document.querySelectorAll('.info5 .more-content');
     const moreContentOverlay = document.querySelector('.info1 .more-content-over');
     const moreContentOverlay2 = document.querySelector('.info2 .more-content-over');
     const moreContentOverlay3 = document.querySelector('.info3 .more-content-over');
     const moreContentOverlay4 = document.querySelector('.info4 .more-content-over');
+    const moreContentOverlay5 = document.querySelector('.info5 .more-content-over');
     const moreContentPic = document.querySelector('.info1 .more-content-pic');
     const moreContentPic2 = document.querySelector('.info2 .more-content-pic');
     const moreContentPic3 = document.querySelector('.info3 .more-content-pic');
     const moreContentPic4 = document.querySelector('.info4 .more-content-pic');
+    const moreContentPic5 = document.querySelector('.info5 .more-content-pic');
     const moreContentBox1 = document.querySelector('.info1 .more-content-boxes');
     const moreContentBox2 = document.querySelector('.info2 .more-content-boxes');
     const moreContentBox3 = document.querySelector('.info3 .more-content-boxes');
     const moreContentBox4 = document.querySelector('.info4 .more-content-boxes');
+    const moreContentBox5 = document.querySelector('.info5 .more-content-boxes');
 
 
 
@@ -181,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showMoreInfo2 = document.getElementById('show-more-info2');
     const showMoreInfo3 = document.getElementById('show-more-info3');
     const showMoreInfo4 = document.getElementById('show-more-info4');
+    const showMoreInfo5 = document.getElementById('show-more-info5');
 
     info1Content.forEach((content) => {
         content.style.display = 'none';
@@ -195,13 +200,18 @@ document.addEventListener('DOMContentLoaded', () => {
     info4Content.forEach((content) => {
         content.style.display = 'none';
     });
+    info5Content.forEach((content) => {
+        content.style.display = 'none';
+    });
 
     showMoreInfo1.addEventListener('click', function() {
         const isShowingAll = showMoreInfo1.textContent === 'Show Less';
 
+        
         info1Content.forEach((content) => {
             content.style.display = isShowingAll ? 'none' : 'block';
         });
+        
         
         moreContentPic.style.display = isShowingAll ? 'none' : 'block';
 
@@ -249,9 +259,27 @@ document.addEventListener('DOMContentLoaded', () => {
             content.style.display = isShowingAll ? 'none' : 'block';
         });
         
+        moreContentPic4.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentOverlay4.style.display = isShowingAll ? 'none' : 'block';
         moreContentBox4.style.display = isShowingAll ? 'none' : 'block';
 
         showMoreInfo4.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+
+    showMoreInfo5.addEventListener('click', function() {
+        const isShowingAll = showMoreInfo5.textContent === 'Show Less';
+
+        info5Content.forEach((content) => {
+            content.style.display = isShowingAll ? 'none' : 'block';
+        });
+        
+        moreContentPic5.style.display = isShowingAll ? 'none' : 'block';
+
+        moreContentOverlay5.style.display = isShowingAll ? 'none' : 'block';
+        moreContentBox5.style.display = isShowingAll ? 'none' : 'block';
+
+        showMoreInfo5.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 
 });

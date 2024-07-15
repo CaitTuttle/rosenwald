@@ -244,7 +244,7 @@ nav ul li a.active {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 27%;
+    width: 50%;
     box-sizing: border-box;
     text-align: center;
     margin: 10px 0;
@@ -279,16 +279,8 @@ nav ul li a.active {
     background-color: #fff;
 }
 
-.description-box {
-    flex: 1; /* Allows the boxes to expand equally within the flex container */
-    padding: 10px; /* Optional padding for spacing */
-}
 
-/* Optional: Add some padding and border for better visibility */
-.old-description, .new-description {
-    padding: 20px;
-    border: 1px solid #ccc;
-}
+
 
 .question-sections {
     margin: 20px;
@@ -455,6 +447,7 @@ nav ul li a.active {
     margin-top: 20px;
 }
 
+
 .more-content-boxes {
     display: flex;
     justify-content: center;
@@ -466,11 +459,9 @@ nav ul li a.active {
     background: #fff;
     border-radius: 10px;
     padding: 20px;
+    display: none;
     text-align: left; /* Left align text */
-    display: flex; /* Enable flexbox layout */
-    flex-direction: row; /* Arrange children in a row */
     justify-content: space-between; /* Distribute space between image and text */
-    align-items: flex-start; /* Align items to the top */
     gap: 20px; /* Space between the image and text */
     margin: 40px auto; /* Center the content box */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -490,7 +481,6 @@ nav ul li a.active {
 }
 
 .more-content-over {
-    background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     box-sizing: border-box;
@@ -500,7 +490,6 @@ nav ul li a.active {
 }
 
 .more-content-pic {
-    width: 250px; /* Adjust the image size as needed */
     height: auto;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -530,6 +519,7 @@ nav ul li a.active {
     margin: 10px 0; /* Add space between paragraphs */
 }
 
+
 .info1 {
     background: #fff;
     border: 1px solid #ddd;
@@ -537,6 +527,7 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: left;
+    position: relative;
 }
 
 .info1 ul {
@@ -629,6 +620,33 @@ nav ul li a.active {
     list-style: circle inside;
     margin-left: 20px; /* Adjust the left margin for nested lists */
 }
+
+.info5 {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.info5 ul {
+    list-style: disc inside;
+    margin-left: 0; /* Adjust the left margin to your liking */
+    padding-left: 0;
+}
+
+.info5 li {
+    margin-bottom: 10px;
+    list-style: disc inside;
+}
+
+.info5 ul ul {
+    list-style: circle inside;
+    margin-left: 20px; /* Adjust the left margin for nested lists */
+}
+
+
 ul {
     list-style-type: disc; /* Ensure bullets are displayed */
     padding-left: 20px;    /* Add some left padding to indent the list */

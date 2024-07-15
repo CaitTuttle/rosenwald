@@ -106,7 +106,6 @@ nav ul li a.active {
 .section-alt {
     background-color: #f9f9f9;
 }
-
 .ranking-boxes {
     display: flex;
     justify-content: center;
@@ -120,7 +119,7 @@ nav ul li a.active {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
-    width: 300px;
+    width: 400px;
     text-align: center;
 }
 
@@ -140,7 +139,6 @@ nav ul li a.active {
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
 }
-
 .options {
     overflow: hidden;
     transition: max-height 0.5s ease;
@@ -280,8 +278,6 @@ nav ul li a.active {
 }
 
 
-
-
 .question-sections {
     margin: 20px;
 }
@@ -301,6 +297,14 @@ nav ul li a.active {
     display: inline-block;
     color: #007BFF; /* Highlight color for the word */
     cursor: pointer;
+}
+.popup-alt {
+    position: relative;
+    display: inline-block;
+    color: #000000; /* Highlight color for the word */
+    cursor: pointer;
+    text-decoration: underline;
+
 }
 
 .popupbox ul {
@@ -339,6 +343,42 @@ nav ul li a.active {
 }
 
 .popup:hover .popupbox {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+.popup-alt .popupbox {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.popup-alt .popupbox::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the pop-up */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.popup-alt:hover .popupbox {
     visibility: visible;
     opacity: 1;
     
@@ -706,6 +746,17 @@ ul ul {
     transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
     margin: 0 auto;   /* Centers the boxes */
 }
+.dropdown-container-alt {
+    border: 2px solid #a25544; /* New border color */
+    background: #e97a30;
+    color: white;
+
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    margin: 0 auto;   /* Centers the boxes */
+}
 
 .dropdown-container:hover {
     box-shadow: 0 10px 20px rgba(102, 153, 204, 0.2);
@@ -784,77 +835,4 @@ ul ul {
 
 .bullet-center .dropdown-container {
     max-width: 400px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-bottom: 60px;
-    align-items: center;
-}
-.grid-item {
-    background:  #e1573e;
-    border: 2px solid rgba(0, 51, 102, 0.2);
-    border-radius: 15px;
-    padding: 30px 20px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease-out;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    perspective: 1000px;
-    color: #FFFFFF;
-}
-.grid-item:hover {
-    transform: rotateY(10deg) translateY(-5px);
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
-}
-.grid-item:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-}
-.grid-item h2 {
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.grid-item h2, .grid-item p {
-    transform: scale(0.95);
-    opacity: 0.8;
-    transition: all 0.4s ease-out;
-}
-.grid-item:hover h2, .grid-item:hover p {
-    transform: scale(1);
-    opacity: 1;
-}
-.grid-item:hover p {
-    display: block;
-}
-.grid-item::before {
-    content: "+";
-    font-size: 24px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #FFFFFF;
-    opacity: 0.7;
-    transition: transform 0.4s ease-out;
-}
-.grid-item.expanded::before {
-    transform: rotate(45deg);
-}
-.grid-item p {
-    display: none;
-    transition: opacity 0.4s ease;
-    font-size: 18px;
-    color: #FFFFFF;
-    margin-top: 10px;
 }

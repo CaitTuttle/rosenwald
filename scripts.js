@@ -121,168 +121,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function toggleContent(buttonId, contentClass, picClass, overlayClass, boxClass) {
+    const button = document.getElementById(buttonId);
+    const contents = document.querySelectorAll(contentClass);
+    const pic = document.querySelector(picClass);
+    const overlay = document.querySelector(overlayClass);
+    const box = document.querySelector(boxClass);
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Old Ranking Section
-    const listItems = document.querySelectorAll('#old-ranking li');
-    const listItems2 = document.querySelectorAll('#new-ranking li');   
-    const showMoreButton = document.getElementById('show-more-rank');
+    button.addEventListener('click', function() {
+        const isShowingAll = button.textContent === 'Show Less';
 
-     listItems.forEach((item, index) => {
-        if (index >= 10) {
-            item.style.display = 'none';
-        }
-    });
-    
-    listItems2.forEach((item, index) => {
-        if (index >= 10) {
-            item.style.display = 'none';
-        }
-    });
-
-    showMoreButton.addEventListener('click', function() {
-        const isShowingAll = showMoreButton.textContent === 'Show Less';
-    
-        listItems.forEach((item, index) => {
-            if (index >= 10) {
-                item.style.display = isShowingAll ? 'none' : 'list-item';
-            }
-        });
-        listItems2.forEach((item, index) => {
-            if (index >= 10) {
-                item.style.display = isShowingAll ? 'none' : 'list-item';
-            }
-        });
-    
-        showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
-
-    // Info1 Section
-    const info1Content = document.querySelectorAll('.info1 .more-content');
-    const info2Content = document.querySelectorAll('.info2 .more-content');
-    const info3Content = document.querySelectorAll('.info3 .more-content');
-    const info4Content = document.querySelectorAll('.info4 .more-content');
-    const info5Content = document.querySelectorAll('.info5 .more-content');
-    const moreContentOverlay = document.querySelector('.info1 .more-content-over');
-    const moreContentOverlay2 = document.querySelector('.info2 .more-content-over');
-    const moreContentOverlay3 = document.querySelector('.info3 .more-content-over');
-    const moreContentOverlay4 = document.querySelector('.info4 .more-content-over');
-    const moreContentOverlay5 = document.querySelector('.info5 .more-content-over');
-    const moreContentPic = document.querySelector('.info1 .more-content-pic');
-    const moreContentPic2 = document.querySelector('.info2 .more-content-pic');
-    const moreContentPic3 = document.querySelector('.info3 .more-content-pic');
-    const moreContentPic4 = document.querySelector('.info4 .more-content-pic');
-    const moreContentPic5 = document.querySelector('.info5 .more-content-pic');
-    const moreContentBox1 = document.querySelector('.info1 .more-content-boxes');
-    const moreContentBox2 = document.querySelector('.info2 .more-content-boxes');
-    const moreContentBox3 = document.querySelector('.info3 .more-content-boxes');
-    const moreContentBox4 = document.querySelector('.info4 .more-content-boxes');
-    const moreContentBox5 = document.querySelector('.info5 .more-content-boxes');
-
-
-
-    const showMoreInfo1 = document.getElementById('show-more-info1');
-    const showMoreInfo2 = document.getElementById('show-more-info2');
-    const showMoreInfo3 = document.getElementById('show-more-info3');
-    const showMoreInfo4 = document.getElementById('show-more-info4');
-    const showMoreInfo5 = document.getElementById('show-more-info5');
-
-    info1Content.forEach((content) => {
-        content.style.display = 'none';
-    });
-    info2Content.forEach((content) => {
-        content.style.display = 'none';
-    });
-    
-    info3Content.forEach((content) => {
-        content.style.display = 'none';
-    });
-    info4Content.forEach((content) => {
-        content.style.display = 'none';
-    });
-    info5Content.forEach((content) => {
-        content.style.display = 'none';
-    });
-
-    showMoreInfo1.addEventListener('click', function() {
-        const isShowingAll = showMoreInfo1.textContent === 'Show Less';
-
-        
-        info1Content.forEach((content) => {
+        contents.forEach((content) => {
             content.style.display = isShowingAll ? 'none' : 'block';
         });
-        
-        
-        moreContentPic.style.display = isShowingAll ? 'none' : 'block';
 
-        moreContentOverlay.style.display = isShowingAll ? 'none' : 'block';
+        if (pic) pic.style.display = isShowingAll ? 'none' : 'block';
+        if (overlay) overlay.style.display = isShowingAll ? 'none' : 'block';
+        if (box) box.style.display = isShowingAll ? 'none' : 'block';
 
-        moreContentBox1.style.display = isShowingAll ? 'none' : 'block';
-
-        showMoreInfo1.textContent = isShowingAll ? 'Show More' : 'Show Less';
+        button.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
-    
-    showMoreInfo2.addEventListener('click', function() {
-        const isShowingAll = showMoreInfo2.textContent === 'Show Less';
+}
 
-        info2Content.forEach((content) => {
-            content.style.display = isShowingAll ? 'none' : 'block';
-        });
-        
-        moreContentPic2.style.display = isShowingAll ? 'none' : 'block';
-
-        moreContentOverlay2.style.display = isShowingAll ? 'none' : 'block';
-
-        moreContentBox2.style.display = isShowingAll ? 'none' : 'block';
-
-        showMoreInfo2.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
-
-    showMoreInfo3.addEventListener('click', function() {
-        const isShowingAll = showMoreInfo3.textContent === 'Show Less';
-
-        info3Content.forEach((content) => {
-            content.style.display = isShowingAll ? 'none' : 'block';
-        });
-        
-        moreContentPic3.style.display = isShowingAll ? 'none' : 'block';
-
-        moreContentOverlay3.style.display = isShowingAll ? 'none' : 'block';
-        moreContentBox3.style.display = isShowingAll ? 'none' : 'block';
-        showMoreInfo3.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
-    
-    showMoreInfo4.addEventListener('click', function() {
-        const isShowingAll = showMoreInfo4.textContent === 'Show Less';
-
-        info4Content.forEach((content) => {
-            content.style.display = isShowingAll ? 'none' : 'block';
-        });
-        
-        moreContentPic4.style.display = isShowingAll ? 'none' : 'block';
-
-        moreContentOverlay4.style.display = isShowingAll ? 'none' : 'block';
-        moreContentBox4.style.display = isShowingAll ? 'none' : 'block';
-
-        showMoreInfo4.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
-
-    showMoreInfo5.addEventListener('click', function() {
-        const isShowingAll = showMoreInfo5.textContent === 'Show Less';
-
-        info5Content.forEach((content) => {
-            content.style.display = isShowingAll ? 'none' : 'block';
-        });
-        
-        moreContentPic5.style.display = isShowingAll ? 'none' : 'block';
-
-        moreContentOverlay5.style.display = isShowingAll ? 'none' : 'block';
-        moreContentBox5.style.display = isShowingAll ? 'none' : 'block';
-
-        showMoreInfo5.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
-
-});
+// Apply the toggleContent function to each info section
+toggleContent('show-more-info1', '.info1 .more-content', '.info1 .more-content-pic', '.info1 .more-content-over', '.info1 .more-content-boxes');
+toggleContent('show-more-info2', '.info2 .more-content', '.info2 .more-content-pic', '.info2 .more-content-over', '.info2 .more-content-boxes');
+toggleContent('show-more-info3', '.info3 .more-content', '.info3 .more-content-pic', '.info3 .more-content-over', '.info3 .more-content-boxes');
+toggleContent('show-more-info4', '.info4 .more-content', '.info4 .more-content-pic', '.info4 .more-content-over', '.info4 .more-content-boxes');
+toggleContent('show-more-info5', '.info5 .more-content', '.info5 .more-content-pic', '.info5 .more-content-over', '.info5 .more-content-boxes');
 
 
 const slideIndices = { 1: 0, 2: 0 , 3: 0, 4: 0}; // Initialize slide indices for carousels

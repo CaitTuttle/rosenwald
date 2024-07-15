@@ -450,9 +450,21 @@ nav ul li a.active {
 
 .more-content-boxes {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: flex-start; /* Align items at the start */
+}
+
+.more-content-pic {
+    max-width: 200px; /* Set a maximum width for the image */
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.more-content-text {
+    flex: 1; /* Allow the text content to take the remaining space */
+}
+
+.more-content ul ul {
+    list-style-type: disc; /* Change the list style for nested lists */
+    margin-left: 20px; /* Add some indentation for nested lists */
 }
 
 .more-content {
@@ -478,6 +490,8 @@ nav ul li a.active {
     padding-left: 20px;
     text-align: left;
     margin: 10px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .more-content-over {
@@ -489,12 +503,6 @@ nav ul li a.active {
     display: none;
 }
 
-.more-content-pic {
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 
 
@@ -675,4 +683,89 @@ ul ul {
     background-color: rgb(249, 134, 134);
     padding: 5px; /* Optional: add padding for better appearance */
     border-radius: 5px; /* Optional: add rounded corners */
+}
+
+
+.bullet-section {
+    text-align: center; 
+    padding: 20px 0;
+}
+
+.bullet-toggle {
+    display: none;
+}
+
+.dropdown-container {
+    border: 2px solid #6699CC;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    max-width: 500px;
+    margin: 0 auto;   /* Centers the boxes */
+}
+
+.dropdown-container:hover {
+    box-shadow: 0 10px 20px rgba(102, 153, 204, 0.2);
+    border-color: #003366;
+    transform: translateY(-5px);
+}
+
+.bullet-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 5px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.bullet-title:hover .arrow {
+    transform: rotate(-90deg);
+}
+
+.arrow {
+    border: solid #6699CC;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    transition: all 0.3s; 
+}
+
+.bullet-toggle:checked + .bullet-title .arrow {
+    transform: rotate(-135deg);
+}
+
+.bullet-desc {
+    display: none;
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    opacity: 0.9;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 600px;
+}
+
+.bullet-toggle:checked + .bullet-title + .bullet-desc {
+    display: block;
+}
+
+.bullet-column {
+    display: inline-block;
+    width: 48%;
+    padding: 10px 1%;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+}
+
+.bullet-center {
+    margin-top: 20px;
+}
+
+.bullet-center .dropdown-container {
+    max-width: 400px;
 }

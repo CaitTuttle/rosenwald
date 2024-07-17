@@ -163,6 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     showMoreButton4.addEventListener('click', () => {
         const isShowingAll = showMoreButton4.textContent === 'Show Less';
+        const moreContent4 = document.querySelector('.info4 .more-content-boxes');
+
 
         moreRankingItems.forEach(item => {
             item.style.display = isShowingAll ? 'none' : 'list-item';
@@ -171,8 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
             item.style.display = isShowingAll ? 'none' : 'list-item';
         });
 
+        moreContent4.style.display = isShowingAll ? 'none' : 'block';
         showMoreButton4.textContent = isShowingAll ? 'Show More' : 'Show Less';
-    });
+      });
     showMoreButton5.addEventListener('click', () => {
         const isShowingAll = showMoreButton5.textContent === 'Show Less';
 

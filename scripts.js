@@ -145,7 +145,12 @@ function toggleContent(buttonId, contentClass, picClass, overlayClass, boxClass)
 
 document.addEventListener('DOMContentLoaded', () => {
     const showMoreButton = document.getElementById('show-more-rank');
+    const showMoreButton4 = document.getElementById('show-more-info4');
+    const showMoreButton5 = document.getElementById('show-more-info5');
     const moreRankingItems = document.querySelectorAll('.more-ranking');
+    const moreContent = document.querySelectorAll('.more-content');
+    
+
 
     showMoreButton.addEventListener('click', () => {
         const isShowingAll = showMoreButton.textContent === 'Show Less';
@@ -155,6 +160,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         showMoreButton.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+    showMoreButton4.addEventListener('click', () => {
+        const isShowingAll = showMoreButton4.textContent === 'Show Less';
+
+        moreRankingItems.forEach(item => {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        });
+        moreContent.forEach(item => {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        });
+
+        showMoreButton4.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+    showMoreButton5.addEventListener('click', () => {
+        const isShowingAll = showMoreButton5.textContent === 'Show Less';
+
+        moreContent.forEach(item => {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        });
+
+        showMoreButton5.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 });
 

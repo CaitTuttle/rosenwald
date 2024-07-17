@@ -219,12 +219,11 @@ nav ul li a.active {
     font-size: 1.5em;
     font-weight: bold;
     margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
+    color:rgb(38, 44, 123)
 }
 
 .county-text {
-    font-size: 1.2em;
+    font-size: 2.2em;
     margin: 0 auto 40px;
     text-align: left;
 }

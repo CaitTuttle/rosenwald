@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showMoreButton = document.getElementById('show-more-rank');
     const showMoreButton4 = document.getElementById('show-more-info4');
     const showMoreButton5 = document.getElementById('show-more-info5');
+    const showMoreButton6 = document.getElementById('show-more-info6');
     const moreRankingItems = document.querySelectorAll('.more-ranking');
     const moreContent = document.querySelectorAll('.more-content');
     
@@ -184,6 +185,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         showMoreButton5.textContent = isShowingAll ? 'Show More' : 'Show Less';
+    });
+    showMoreButton6.addEventListener('click', () => {
+        const isShowingAll = showMoreButton5.textContent === 'Show Less';
+
+        moreContent.forEach(item => {
+            item.style.display = isShowingAll ? 'none' : 'list-item';
+        });
+
+        showMoreButton6.textContent = isShowingAll ? 'Show More' : 'Show Less';
     });
 });
 

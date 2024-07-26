@@ -62,15 +62,6 @@ nav {
     .event-box {
         width: 100%; /* Make event boxes full-width */
     }
-    .dropdown-container {
-        width: 100%; /* Make event boxes full-width */
-    }
-    .bullet-column{
-        width: 100%;
-    }
-    .bullet-desc {
-        font: 10%;
-    }
 }
 @media (min-width: 601px) and (max-width: 768px) {
     .header-content {

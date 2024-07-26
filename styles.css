@@ -250,6 +250,7 @@ nav ul li a.active {
     margin: 40px 10%;
     padding: 20px;
     border: 1px solid #ddd;
+    flex-wrap: wrap; /* Allows wrapping to a new line if there are too many items */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -316,11 +317,16 @@ nav ul li a.active {
     margin-top: 0;
     font-size: 1.5em;
 }
-.event-box-2 {
-    min-width: 200px; /* Adjust minimum width as needed */
+.event-box-2{
     border: 1px solid #ccc;
+    font-size: 1em;
+    font-weight: bold;
     padding: 10px;
     box-sizing: border-box;
+    color:rgb(38, 44, 123);    
+}
+.event-box-2 p{
+    font-size: 1em;
 }
 
 .event-boxes-alt {
@@ -755,6 +761,8 @@ ul ul {
     text-align: center; 
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line if there are too many items */
+
 
     
 }

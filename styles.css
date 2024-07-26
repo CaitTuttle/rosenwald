@@ -260,6 +260,12 @@ nav ul li a.active {
     margin-top: 0;
     font-size: 1.5em;
 }
+.event-box-2 {
+    min-width: 200px; /* Adjust minimum width as needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 .event-boxes-alt {
     display: flex;

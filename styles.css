@@ -62,10 +62,6 @@ nav {
     .event-box {
         width: 100%; /* Make event boxes full-width */
     }
-
-    #map {
-        height: 300px; /* Reduce map height on small screens */
-    }
 }
 @media (min-width: 601px) and (max-width: 768px) {
     .header-content {
@@ -776,7 +772,7 @@ ul ul {
     display: none;
     margin-top: 15px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 120%;
     opacity: 0.9;
     line-height: 1.6;
     text-align: left;
@@ -785,6 +781,8 @@ ul ul {
 .bullet-content {
     display: flex;
     align-items: flex-start;
+    font-size: 80%;
+
 }
 
 

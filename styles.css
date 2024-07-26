@@ -238,12 +238,12 @@ nav ul li a.active {
 
 .event-boxes {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .event-box {
+    flex: 1;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -255,9 +255,32 @@ nav ul li a.active {
     margin: 10px 0;
 }
 
+
 .event-box h3 {
     margin-top: 0;
     font-size: 1.5em;
+}
+
+.event-boxes-alt {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.event-box-alt {
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.event-box-alt h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+
 }
 
 .event-box ul {

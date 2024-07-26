@@ -302,9 +302,9 @@ nav ul li a.active {
 .event-box {
     flex: 1;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #580000;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(167, 14, 14, 0.323);
     padding: 20px;
     width: 50%;
     box-sizing: border-box;
@@ -327,6 +327,10 @@ nav ul li a.active {
 }
 .event-box-2 p{
     font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    color:rgb(38, 44, 123);    
 }
 
 .event-boxes-alt {

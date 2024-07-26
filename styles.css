@@ -74,6 +74,8 @@ nav {
     .image-quote-container {
         max-width: 100%; /* Ensure image container scales properly */
 }
+}
+
 @media (min-width: 601px) and (max-width: 768px) {
     .header-content {
         padding: 80px 20px; /* Adjust padding for tablets */

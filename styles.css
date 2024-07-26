@@ -62,6 +62,12 @@ nav {
     .event-box {
         width: 100%; /* Make event boxes full-width */
     }
+    .dropdown-container {
+        width: 100%; /* Make event boxes full-width */
+    }
+    .bullet-column{
+        width: 100%
+    }
 }
 @media (min-width: 601px) and (max-width: 768px) {
     .header-content {
@@ -781,7 +787,7 @@ ul ul {
 .bullet-content {
     display: flex;
     align-items: flex-start;
-    font-size: 80%;
+    font-size: 8dvb;
 
 }
 

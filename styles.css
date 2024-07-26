@@ -62,6 +62,17 @@ nav {
     .event-box {
         width: 100%; /* Make event boxes full-width */
     }
+    .bullet-title {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .bullet-content {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center;
+    }
+
+    .image-quote-container {
+        max-width: 100%; /* Ensure image container scales properly */
 }
 @media (min-width: 601px) and (max-width: 768px) {
     .header-content {

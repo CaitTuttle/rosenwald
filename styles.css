@@ -55,25 +55,28 @@ nav {
     nav ul li {
         margin: 0 15px;
     }
-    .ranking-box {
-        width: 100%; /* Make ranking boxes full-width */
+
+    .ranking-box,
+    .event-box {
+        width: 100%; /* Ensure ranking and event boxes are full-width */
     }
 
-    .event-box {
-        width: 100%; /* Make event boxes full-width */
-    }
     .bullet-title {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
+        font-size: 1.2em; /* Adjust font size for larger screens */
     }
 
     .bullet-content {
-        flex-direction: column; /* Stack image and text vertically on small screens */
-        align-items: center;
+        flex-direction: row; /* Ensure image and text are side-by-side on larger screens */
+        align-items: flex-start;
     }
 
     .image-quote-container {
-        max-width: 100%; /* Ensure image container scales properly */
-}
+        max-width: 200px; /* Limit width of image container on larger screens */
+    }
+
+    .quote-overlay {
+        font-size: 0.8em; /* Adjust font size of overlay text if necessary */
+    }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {

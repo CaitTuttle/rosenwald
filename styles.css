@@ -713,6 +713,9 @@ ul ul {
 .bullet-section {
     text-align: center; 
     padding: 20px 0;
+    display: flex;
+
+    
 }
 
 .bullet-toggle {
@@ -833,6 +836,7 @@ ul ul {
     box-sizing: border-box;
     text-align: left;
     vertical-align: top;
+
 }
 
 .bullet-center {
@@ -855,6 +859,8 @@ ul ul {
 
 .bullet-column {
     width: 100%; /* Ensure the column takes full width on small screens */
+    display: flex;
+    flex-direction: column;
 }
 
 

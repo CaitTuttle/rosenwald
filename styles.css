@@ -843,9 +843,6 @@ ul ul {
     width: 100%; /* Ensure the column takes full width on small screens */
 }
 
-.ranking-boxes, .event-boxes {
-    flex-direction: column; /* Stack items vertically on small screens */
-}
 
 img {
     max-width: 100%; /* Prevent images from overflowing their containers */

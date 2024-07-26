@@ -14,7 +14,6 @@ header {
 .header-content {
     position: relative;
     z-index: 2;
-    padding: 50px 20px;
 }
 
 header h1 {
@@ -55,6 +54,38 @@ nav {
 
     nav ul li {
         margin: 0 15px;
+    }
+    .ranking-box {
+        width: 100%; /* Make ranking boxes full-width */
+    }
+
+    .event-box {
+        width: 100%; /* Make event boxes full-width */
+    }
+
+    #map {
+        height: 300px; /* Reduce map height on small screens */
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .header-content {
+        padding: 80px 20px; /* Adjust padding for tablets */
+    }
+
+    header h1 {
+        font-size: 4em; /* Adjust font size for tablets */
+    }
+
+    .ranking-box {
+        width: 90%; /* Make ranking boxes nearly full-width */
+    }
+
+    .event-box {
+        width: 48%; /* Make event boxes nearly full-width */
+    }
+
+    #map {
+        height: 400px; /* Adjust map height for tablets */
     }
 }
 nav ul {
@@ -806,4 +837,17 @@ ul ul {
 .image-container img {
     display: block;
     max-width: 100%; /* Ensure the image fits within the container */
+}
+
+.bullet-column {
+    width: 100%; /* Ensure the column takes full width on small screens */
+}
+
+.ranking-boxes, .event-boxes {
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+img {
+    max-width: 100%; /* Prevent images from overflowing their containers */
+    height: auto; /* Maintain aspect ratio */
 }

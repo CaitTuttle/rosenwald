@@ -14,11 +14,11 @@ header {
 .header-content {
     position: relative;
     z-index: 2;
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 
 header h1 {
-    font-size: 6em;
+    font-size: 3em;
 }
 
 header::before {
@@ -38,12 +38,25 @@ header::before {
 
 nav {
     background-color: #333;
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 999;
 }
 
+@media (min-width: 600px) {
+    .header-content {
+        padding: 100px 20px;
+    }
+
+    header h1 {
+        font-size: 6em;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -100,7 +113,7 @@ nav ul li a.active {
     font-size: 1.2em;
     text-align: left;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
 .section-alt {
@@ -620,158 +633,6 @@ nav ul li a.active {
 
 .more-ranking {
     display: none;
-}
-
-.info1 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-    position: relative;
-}
-
-.info1 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info1 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info1 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
-}
-
-.info2 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.info2 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info2 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info2 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
-}
-
-.info3 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.info3 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info3 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info3 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
-}
-
-.info4 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.info4 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info4 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info4 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
-}
-
-.info5 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.info5 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info5 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info5 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
-}
-
-
-.info6 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.info6 ul {
-    list-style: disc inside;
-    margin-left: 0; /* Adjust the left margin to your liking */
-    padding-left: 0;
-}
-
-.info6 li {
-    margin-bottom: 10px;
-    list-style: disc inside;
-}
-
-.info6 ul ul {
-    list-style: circle inside;
-    margin-left: 20px; /* Adjust the left margin for nested lists */
 }
 
 ul {

@@ -337,8 +337,48 @@ nav ul li a.active {
     text-align: center;
     margin: 10px 0;
 }
+.event-box-alt p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
 
 .event-box-alt h3 {
+    margin-top: 0;
+    font-size: 1.75em;
+    font-weight: bold;
+
+}
+
+.event-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+.event-box ul li {
+    margin: 5px 0;
+}
+
+
+.event-boxes-alt2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.event-box-alt2 {
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.event-box-alt2 h3 {
     margin-top: 0;
     font-size: 1.5em;
     font-weight: normal;
@@ -383,6 +423,7 @@ nav ul li a.active {
     font-size: 1em;
     line-height: 1.5;
 }
+
 .county-text ul{
     font-size: 1em;
     line-height: 1.5;

@@ -326,77 +326,20 @@
         <h2>Methodology</h2>
         <div class="image-quote-container">
             <img src = "https://i.ibb.co/VL064Rh/plot.jpg">
-            </div>
-        <div class="bullet-section" data-aos="fade-up" data-aos-delay=>
-            <div class="bullet-column">
-                <div class="dropdown-container">
-                    <input type="checkbox" id="bullet17" class="bullet-toggle" >
-                    <label for="bullet17" class="bullet-title"><strong>Data Collection</strong><i class="arrow"></i></label>
-                    <div class="bullet-desc" data-related="bullet17">
-                        <div class="bullet-content">                           
-                            <ul>
-                        <li>Our data collection consisted of several database organizations such as the NC DPI and County Health Rankings (more details can be found in citations).</li>
-                        <li>A major part of this process was cleaning the data to make them all compatible with one another. (through making them match by county rather than district or percentages rather than incomparable figures).</li>
-                        <li>After combing through data we merged over 30 variables to make an inclusive csv.</li>
-                        <li>Our dependent variable is the educational output ranking from the 2023 roadmap of needs assessment.</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-                <div class="bullet-column">
-                    <div class="dropdown-container">
-                        <input type="checkbox" id="bullet18" class="bullet-toggle" >
-                        <label for="bullet18" class="bullet-title"><strong>Data Processing Models</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet18">
-                            <div class="bullet-content">                           
-                                <ul>
-                                <li>We used Multiple Linear Regression (MLR) to analyze impacts.</li>
-                    </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="bullet-column">
-                    <div class="dropdown-container">
-                        <input type="checkbox" id="bullet19" class="bullet-toggle" >
-                        <label for="bullet19" class="bullet-title"><strong>Model Selection</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet19">
-                            <div class="bullet-content">                           
-                                <ul>
-                                <li>Once we had developed our first MLR, which included all variables that were not collinear, we calculated the Variance Inflation Factor (VIF) and removed all factors with a high VIF (over 10).</li>
-                                <li>With this formula, we also conducted an ANOVA test and removed all factors with a p-value over .05.</li>
-                                <li>This left us with 11 variables.</li>
-                                <li>To test model performance we compared four factors from both models:</li>
-                                <ul>
-                                    <li>AIC</li>
-                                    <li>BIC</li>
-                                    <li>RMSE</li>
-                                    <li>R&sup2</li>
-                                </ul>
-                                <li>The reduced model performed significantly better so we selected to use only those factors.</li>
-                </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="bullet-column">
-                    <div class="dropdown-container">
-                        <input type="checkbox" id="bullet20" class="bullet-toggle" >
-                        <label for="bullet20" class="bullet-title"><strong>Analytical Conclusions</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet20">
-                            <div class="bullet-content">                           
-                                <ul>
-                                <li>We sought not to prove that our rankings are the correct way of assessing a student/school but that rankings inevitably have biases.</li>
-                                <li>Demographic factors can be used to predict outcome for educational rankings</li>
-                                <ul>
-                                    <li>This proves that the way rankings currently assess success is biased and assesses economic privilege.</li>
-                                </ul>
-                                <li>Through calculating residuals we are able to see how well a school is performing compared to its predicted value.</li>
-                                <li>We found that our testing data could predict the given outcomes with 67.7%% accuracy and the trained data with 78% accuracy. This indicates that the measures of county success are actually measures of community affluence, not good measures of school success or effort.</li>
-                </ul>
-                    </div>
-                </div>
-                </div>
-        </div>    
-    </section>
+            <div class= "quote-overlay-2">This graph displays residuals against predicted values, one
+                of the diagnostic plots we used to validate assumptions
+                such as normality, homoscedasticity, linearity, and
+                independence. </div>     
+        </div>
+        <h3>Qualitative</h3>
+        <p> Our study incorportates a series of semi-structured interviws with former NC Rosenwald student attendees and theri descendants around thematic experiences. Our work also reflects several texts from local authors, archival documents, and a literature review.</p>
+        <h3>Quantitative</h3>
+        <p>We used Multiple Linear Regression (MLR) to analyze how certain variables addressing structural inequities can predict NC school rankings.  </p>
+        <p><strong>Quantitative Data Collection</strong>The rankings we used (y variable) are from the 2023 Roadmap of Needs Assessment. We collected data (x variable) from various reliable data sources, such as the US Census and the NC Office of State Budget and Management. 
+        </p>
+        <p>We identified 11 variables that had the greatest influence on the rankings and found that our testing data could predict the given outcomes with 67.7%% accuracy and the trained data with 78% accuracy. 
+        </p>
+        </section>
 
     <section id="history" class="section">
         <h2>Rosenwald Schools: A Brief Overview</h2>
@@ -418,388 +361,206 @@
     <section id="counties" class="section section-alt">
         <h2>Rosenwald Counties</h2>
         <div class="county-section">
-            <h3 class="county-heading">Durham County</h3>
-            <div class="carousel-container" id="carousel1">
-                <h3>Russell School</h3>
-                <button class="carousel-button prev" onclick="moveSlides(-1, 1)">&#10094;</button>
-                <div class="carousel-slide">
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/551GjF4/file.jpg" alt="Image 1">
-                        <div class="caption">The Russell School, in Durham, North Carolina, sits on a lawn on a bright, sunny day. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/kxWGTss/kidsside.jpg" alt="Image 2">
-                        <div class="caption">A spacious room in the Russell School features original objects, including a chalkboard, window panes, a student desk, and objects purchased or donated by local Black community organizations throughout the years, such as chairs and a piano. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/QFfFSZk/pews-communityside.jpg" alt="Image 3">
-                        <div class="caption">Donated church pews sit in the other room in the Russell School. In 1945, when the room stopped functioning as a school room for upper grades, the room served as a center where the community gathered. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/z4v7bVV/floorplan.jpg" alt="Image 4">
-                        <div class="caption">Russell School's two teacher community school floor plan is printed on white paper. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/SsBkCny/windowsartsy.jpg" alt="Image 5">
-                        <div class="caption">Windows in Russell School were made and placed strategically, with a glazing process that protects individual window panes, and windows were situated from east to west to optimize natural light in the absence of electricity. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/WyFwk2C/originaldesk.jpg" alt="Image 6">
-                        <div class="caption">An original Russell School desk sits in the lower grades classroom. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/XVV4sjH/potbellystove.jpg" alt="Image 7">
-                        <div class="caption">The Russell School taught students some gender specific roles. Boys brought in wood and started the fire in a potbelly stove similar to the replica shown above while girls supported teachers with administrative tasks. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/h29dx5G/durhammeetingminutes.jpg" alt="Image 8">
-                        <div class="caption">Durham County School Board meeting minutes, where Gep Mack appeared before the school board to request that the school board approve the Russell school for an extended school year, are hung on the walls of the Russell School. (Captured June 2024)</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/SnMtsyS/chair.jpg" alt="Image 9">
-                        <div class="caption">The "Buy A Chair Campaign" started in 1946 to preserve the Russell School as a historic location after its closure. Donors contributed $3.50, the cost of a chair, and had their names written on them. This initiative reflects the organized fundraising during the Rosenwald era. (Captured June 2024)</div>
-                    </div>
-                </div>
-                <button class="carousel-button next" onclick="moveSlides(1, 1)">&#10095;</button>
-                <div class="carousel-indicators">
-                    <span class="indicator" onclick="currentSlide(1, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(2, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(3, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(4, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(5, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(6, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(7, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(8, 1)"></span>
-                    <span class="indicator" onclick="currentSlide(9, 1)"></span>
-                </div>
-            </div>
-            <h3><strong>Education in Durham County: An Overview</strong></h3>
-            <p>Durham County, named after the town of Durham, was founded in 1881 and is situated in north-central North Carolina [56]. As of 2020, it is the 6th most populous county in the state [75]. White male students gained the first educational opportunities in 1852 when a private school referred to simply as “Academy” opened [55]. It wasn’t until 1891, nearly 40 years later, that African Americans gained access to a publicly available educational opportunity with the opening of Whitted School [16]. </p>
-            <h3><strong>A Rosenwald School in Durham County: Russell School</strong></h3>
-            <p>Russell School, built in 1926, was one of 18 Rosenwald schools that were built in Durham county, and is the only remaining Rosenwald school building that still stands today [49]. The curriculum taught at the Russell School was comprehensive. One notable part of the curriculum was social studies. An alumnus, whose favorite subject was social studies, says that at the Russell School, “social studies looked like reading the newspaper and discussing current events.” Since many of the materials used at the Russell School were donated and/or secondhand, the newspapers students used were often weeks old. This stands as an example of the school's many victories over systemic inequities.</p>
-            <p>The Russell School building served as an educational facility for residents for 19 years, but in 1945, it transformed from a school into an active community center. After its conversion, Russell School hosted many events for families and community members. Activities remembered by alumni included marbles for the children, fish fries, the may pole, and playing in the creek across the street. One other beloved activity was going “fishing.” This entailed throwing a fishing line through the school window while adults stood on the other side and attached small prizes, such as candy, to the line. </p>
-            <blockquote class="county-quote">“The legacy of the historic Russell School is a testament to the enduring power of education and community, inspiring generations to strive for excellence and unity” - Friends of Russell Rosenwald School</blockquote>
-            <p><strong>Black education in Durham was supported by entities who played crucial roles in creating an environment where Black individuals could work to overcome structural inequities. Some of these entities are below.</strong></p>
-            <p><strong>Click each term to learn more.</strong></p>
             <div class="bullet-section" data-aos="fade-up" data-aos-delay=>
-                    <div class="bullet-column">
-                        <div class="dropdown-container">
-                            <input type="checkbox" id="bullet1" class="bullet-toggle">
-                            <label for="bullet1" class="bullet-title"><strong>Aaron McDuffie Moore</strong><i class="arrow"></i></label>
-                            <div class="bullet-desc" data-related="bullet1">
-                                <div class="bullet-content">
-                                <div class="image-quote-container">
-                                <img src = "https://i.ibb.co/cknThJL/A-M-MOORE-M-D-PRESIDENT-NORTH-CAROLINA-MUTUAL.jpg">
-                                <div class= "quote-overlay">Aaron McDuffie Moore- Blake Hill-Saya, Rep. G.K. Butterfield, and C. Eileen Watts Welch: 
-                                    MOORE BIOGRAPHY | Durham Colored Library (durhamcl.org) </div>                               
-                                </div>                               
-                                <p>Aaron McDuffie Moore, a prominent community leader in Durham, North Carolina, was a powerful force behind education, economic justice, and healthcare for Black citizens in Durham [28]. Born in 1863, Moore was Durham’s first Black physician and founded Lincoln Hospital, a critical healthcare institution for Black patients and a training hospital for doctors. He also secured Rosenwald funding and introduced the Jeanes Fund to Durham, further stimulating educational progress [72]. Dr. Moore contributed to the founding of Durham’s Black Wall Street, which inspired the rise of influential Black-owned businesses such as the historic NC Mutual Life Insurance Company and Mechanics and Farmers Bank [7].</p>
+                <div class="bullet-column">
+                    <div class="dropdown-container">
+                        <input type="checkbox" id="bullet60" class="bullet-toggle">
+                        <label for="bullet60" class="bullet-title">
+                            <div class="title-container">
+                            <strong>Durham County</strong>
+                            <i class="arrow"></i>
                         </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="bullet-column">
-                    <div class="dropdown-container">
-                        <input type="checkbox" id="bullet2" class="bullet-toggle">
-                        <label for="bullet2" class="bullet-title"><strong>Hayti (pronounced Hay-tie)</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet2">
-                            <div class="bullet-content">
-                            <div class="image-quote-container">
-                            <img src = "https://i.ibb.co/VBsQxfn/download.jpg">
-                            <div class= "quote-overlay">Fayetteville St in Hayti in the 1940s [70]</div>                               
-                            </div> 
-                                <p>Hayti (pronounced Hay-tie), from the 1880s to the 1940s, was the hub for commercial, economic, and social activity for Durham’s Black community [33]. With over 200 Black businesses, theaters, and a cultural scene that is known for its creation of the piedmont blues, Hayti was extremely successful and served as a self-sufficient enclave [33]. In the mid-twentieth century, the Hayti area was negatively impacted through urban renewal, which eliminated large portions of the neighborhood. The development of State Highway 147 through the center of Hayti also contributed to its decline [70]. Efforts like the Hayti Heritage Center now work to preserve the area’s cultural legacy and broader contributions to Durham’s history. Visit the Hayti Heritage Center website here: https://hayti.org/ [24].</p>
-                </div>
-
-                    <p class = event-box-2>“Today there is a singular group in Durham where a black man may get up in the morning from a mattress made by black men, in a house which a black man built out of lumber which black men cut and planed; he may put on a suit which he bought at a colored haberdashery and socks knit as a colored mill; he may cook victuals from a colored grocery on a stove which black men fashioned; he may earn his leaving working for colored men, be sick in a colored hospital, and buried from a colored church; and the Negro insurance society will pay his widow enough to keep his children in a colored school. This is surely progress.” -Excerpt from W.E.B. Du Bois’ The Upbuilding of Black Durham. The success of the Negroes and Their Value to a Tolerant and Helpful Southern City</p>
-            
-                </div>
-
-                </div>
-            </div>
-            <div class="bullet-column">
-                <div class="dropdown-container">
-                    <input type="checkbox" id="bullet10" class="bullet-toggle">
-                    <label for="bullet10" class="bullet-title"><strong>Durham Colored Library</strong><i class="arrow"></i></label>
-                    <div class="bullet-desc" data-related="bullet10">
-                        <div class="bullet-content">
-                        <div class="image-quote-container">
-                        <img src = "https://i.ibb.co/Vww0qzs/SW006-thumb.jpg">
-                        <img src = "https://i.ibb.co/LDFTxrn/SW167-thumb.jpg">
-                        <div class= "quote-overlay">CAPTION</div>                               
-                        </div> 
-                        <p>The Durham Colored Library was established in 1916. It is known today as the Stanford L. Warren Library. Dr. AM Moore and local entrepreneur, John Merrick, partnered together and established the library which has served as a valuable institution for showcasing African-American works in Durham [15]. Originally a Sunday School library, it evolved into a public community resource offering free books, hosting debates, home to the Negro Braille Magazine, and housing the esteemed Negro Collection [15]. These are some of the many testaments to the library’s role in promoting literacy and intellectual engagement among African Americans in Durham.</p>    
-                    </div>
-    
-        
-            </div>
-    
-            </div>
-        </div>
-            <div class="bullet-column">
-                <div class="dropdown-container">
-                    <input type="checkbox" id="bullet3" class="bullet-toggle">
-                    <label for="bullet3" class="bullet-title"><strong>The Jeanes Fund</strong><i class="arrow"></i></label>
-                    <div class="bullet-desc" data-related="bullet3">
-                        <div class="bullet-content">
-                        <div class="image-quote-container">
-                        <img src = "https://i.ibb.co/Gczs86V/Anna-jeanes-1.jpg">
-                        <div class= "quote-overlay"> Anna T. Jeanes </div>                               
-                        </div> 
-                        <p>The Jeanes Fund was launched in 1907 by Anna T. Jeanes, and it aimed to improve educational opportunities for Black Americans in rural spaces throughout the South [16]. In Durham, the Jeanes Fund sponsored influential Black teachers who provided academic guidance, imparted practical skills, and ultimately served as assistants to school board officials to lead and direct the development of Black education [79]. Supported by a national group of racially integrated Board of Trustees, including prominent figures like Booker T. Washington and Andrew Carnegie, the Jeanes Fund left a lasting impact on educational equality and community development in Durham and beyond [79].
-                        </p>
-            </div>
-
-        
-            </div>
-
-            </div>
-        </div>
-
-</div>
-</div>
-
-
-        <div class="county-section">
-            <h3 class="county-heading">Martin County</h3>
-            <div class="carousel-container" id="carousel4">
-                <button class="carousel-button prev" onclick="moveSlides(-1, 4)">&#10094;</button>
-                <div class="carousel-slide">
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/THLd0xk/jen1.webp" alt="Image 1.4">
-                        <div class="caption"> The Hamilton School is a regional, nonprofit economic development organization. Built in 1914 and operated until 1960. </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/19bVK91/Classroom-Diagram-1.webp" alt="Image 2.4">
-                        <div class="caption">The building had 4 insulated rooms constructed in the original building, and then 2 rooms were added because so many students were coming to attend the school. </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/9YWRLnf/6508a9f598e5b-image.jpg" alt="Image 3.4">
-                        <div class="caption"> The Hamilton School before renovations.</div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=BgOQpfgB3Us&t=640s" target="_blank" class="video-thumbnail">
-                            <img src="https://i.ibb.co/HnrHyhH/Screenshot-2024-07-12-at-2-18-53-PM.png" alt="YouTube Video Thumbnail">
-                            <div class="play-button">▶</div>
-                        </a>                        
-                        <div class="caption">The building had 4 insulated rooms constructed in the original building, and then 2 rooms were added because so many students were coming to attend the school. </div>
-                    </div>
-                </div>
-                <button class="carousel-button next" onclick="moveSlides(1, 4)">&#10095;</button>
-                <div class="carousel-indicators">
-                    <span class="indicator" onclick="currentSlide(1, 4)"></span>
-                    <span class="indicator" onclick="currentSlide(2, 4)"></span>
-                    <span class="indicator" onclick="currentSlide(3, 4)"></span>
-                    <span class="indicator" onclick="currentSlide(4, 4)"></span>
-                </div>
-            </div>
-            <div class="bullet-section" data-aos="fade-up" data-aos-delay=>
-                <div class="bullet-column">
-                    <div class="dropdown-container">
-                        <input type="checkbox" id="bullet9" class="bullet-toggle">
-                        <label for="bullet9" class="bullet-title"><strong>Williamston Colored School</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet9">
-                            <div class="bullet-content">
-                            <div class="image-quote-container">
-                            <img src = "https://i.ibb.co/CsqN3YY/mt0998.jpg">
-                            <div class= "quote-overlay">Refurbished Picture</div>                               
-                            </div>
-                                <ul>
-                                <li>Built-in 1931-1972 with assistance from the Julius Rosenwald Fund, the State Liberty Fund</li>
-                                <li>The first modern high school for African Americans in Williamston</li>
-                                <li>The interior of the building originally held ten classrooms, six in the west wing and four in the east, two administrative rooms, an additional classroom/library along the front, and an auditorium in the central section</li>
-                                <li>The school was the only high school for Black students in Williamston and the eastern section of Martin County</li>
-                </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-            <div class="bullet-column">
-                <div class="dropdown-container">
-                    <input type="checkbox" id="bullet27" class="bullet-toggle">
-                    <label for="bullet27" class="bullet-title"><strong>The Williamston Freedom Movement: The Fight for a equality and education</strong><i class="arrow"></i></label>
-                    <div class="bullet-desc" data-related="bullet27">
-                        <div class="bullet-content">
-                        <div class="image-quote-container">
-                            <img src = "https://i.ibb.co/LQQSn7D/Screenshot-2019-02-1120-African-American20-Life2-C20-Double-Exposed-1549903734452-png-72362912-ver1.webp">
-                            <img src = "https://i.ibb.co/Fx09Qyn/Poster-Boycott-Southern-Christian-Leadership-1964-ECU.jpg">
-                            <div class= "quote-overlay">CAPTIONNNNNNN</div>  
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/Vww0qzs/SW006-thumb.jpg">
+                        </div>
+                        </label>  
+                                             
+                        <div class="bullet-desc" data-related="bullet60">
                             
-                        </div>
-                        <ul>
-                            <li><strong>Leaders: Sarah Small and Golden Frinks</strong></li>
-                            <li><strong>Aim: Advocate for civil rights and address social injustice in the Williamston community</strong></li>
-                            <li><strong>Focus Area:</strong></li>
-                            <ul>
-                                <li>Community empowerment</li>
-                                <li>Grassroots organizing and mobilizing</li>
-                                <li>Raising awareness of local policies impacting marginalized groupss</li>
-                            </ul>
-                            <li><strong>Leadership Emphasis:</strong></li>
-                            <ul>
-                                <li>Inclusivity</li>
-                                <li>Collaboration</li>
-                                <li>Inspiring Youth Involvement</li>
-                            </ul>
-                            <li><strong>Youth Engagement</strong></li>
-                            <ul>
-                                <li>Described as “really stirred up”</li>
-                                <li>Prepared for non-violent protests</li>
-                            </ul>
-                            <li><strong>Key action</strong></li>
-                            <ul>
-                                <li>Boycott of segregation schools (e.g., E.J. Hayes)</li>
-                                <li>Highlighting inequalities faced by Black students</li>
-                                <li>Demanding better educational opportunities</li>
-                            </ul>
-                            <li> <strong>Historical context</strong></li>
-                            <ul>
-                                <li>E.J Hayes was formally known as the Williamston colored school, and the largest Rosenwald building created in Martin County, with 12 rooms.</li>
-                            </ul>
-                            <li> <strong>Impact </strong></li>
-                            <ul>
-                                <li>Raised awareness, and contributed to policy changes, regarding racial segregation in education</li>
-                            </ul>
-                            <li><strong>Martin County Teacher Association: </strong></li>
-                            <ul>
-                                <li>Included Black educators who signed a petition against police treatment of students</li>
-                                <li> Took a significant risk due to potential job loss</li>
-                                <li>Advocated for students' rights and safety, recognizing systemic issues required collective action</li>
-                            </ul>
-                            <p><strong>Legacy: teachers set an example in fostering social justice and advocating for student well-being. </strong></p>
-                        </ul>
-                    </div> 
-                </div> 
-
+                        <div class="carousel-container" id="carousel1">
+                                    <h3>Russell School</h3>
+                                    <button class="carousel-button prev" onclick="moveSlides(-1, 1)">&#10094;</button>
+                                    <div class="carousel-slide">
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/551GjF4/file.jpg" alt="Image 1">
+                                            <div class="caption">The Russell School, in Durham, North Carolina, sits on a lawn on a bright, sunny day. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/kxWGTss/kidsside.jpg" alt="Image 2">
+                                            <div class="caption">A spacious room in the Russell School features original objects, including a chalkboard, window panes, a student desk, and objects purchased or donated by local Black community organizations throughout the years, such as chairs and a piano. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/QFfFSZk/pews-communityside.jpg" alt="Image 3">
+                                            <div class="caption">Donated church pews sit in the other room in the Russell School. In 1945, when the room stopped functioning as a school room for upper grades, the room served as a center where the community gathered. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/z4v7bVV/floorplan.jpg" alt="Image 4">
+                                            <div class="caption">Russell School's two teacher community school floor plan is printed on white paper. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/SsBkCny/windowsartsy.jpg" alt="Image 5">
+                                            <div class="caption">Windows in Russell School were made and placed strategically, with a glazing process that protects individual window panes, and windows were situated from east to west to optimize natural light in the absence of electricity. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/WyFwk2C/originaldesk.jpg" alt="Image 6">
+                                            <div class="caption">An original Russell School desk sits in the lower grades classroom. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/XVV4sjH/potbellystove.jpg" alt="Image 7">
+                                            <div class="caption">The Russell School taught students some gender specific roles. Boys brought in wood and started the fire in a potbelly stove similar to the replica shown above while girls supported teachers with administrative tasks. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/h29dx5G/durhammeetingminutes.jpg" alt="Image 8">
+                                            <div class="caption">Durham County School Board meeting minutes, where Gep Mack appeared before the school board to request that the school board approve the Russell school for an extended school year, are hung on the walls of the Russell School. (Captured June 2024)</div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://i.ibb.co/SnMtsyS/chair.jpg" alt="Image 9">
+                                            <div class="caption">The "Buy A Chair Campaign" started in 1946 to preserve the Russell School as a historic location after its closure. Donors contributed $3.50, the cost of a chair, and had their names written on them. This initiative reflects the organized fundraising during the Rosenwald era. (Captured June 2024)</div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-button next" onclick="moveSlides(1, 1)">&#10095;</button>
+                                    <div class="carousel-indicators">
+                                        <span class="indicator" onclick="currentSlide(1, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(2, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(3, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(4, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(5, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(6, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(7, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(8, 1)"></span>
+                                        <span class="indicator" onclick="currentSlide(9, 1)"></span>
+                                    </div>
+                                </div>
+                                <h3><strong>Education in Durham County: An Overview</strong></h3>
+                                <p>Durham County, named after the town of Durham, was founded in 1881 and is situated in north-central North Carolina [56]. As of 2020, it is the 6th most populous county in the state [75]. White male students gained the first educational opportunities in 1852 when a private school referred to simply as “Academy” opened [55]. It wasn’t until 1891, nearly 40 years later, that African Americans gained access to a publicly available educational opportunity with the opening of Whitted School [16]. </p>
+                                <h3><strong>A Rosenwald School in Durham County: Russell School</strong></h3>
+                                <p>Russell School, built in 1926, was one of 18 Rosenwald schools that were built in Durham county, and is the only remaining Rosenwald school building that still stands today [49]. The curriculum taught at the Russell School was comprehensive. One notable part of the curriculum was social studies. An alumnus, whose favorite subject was social studies, says that at the Russell School, “social studies looked like reading the newspaper and discussing current events.” Since many of the materials used at the Russell School were donated and/or secondhand, the newspapers students used were often weeks old. This stands as an example of the school's many victories over systemic inequities.</p>
+                                <p>The Russell School building served as an educational facility for residents for 19 years, but in 1945, it transformed from a school into an active community center. After its conversion, Russell School hosted many events for families and community members. Activities remembered by alumni included marbles for the children, fish fries, the may pole, and playing in the creek across the street. One other beloved activity was going “fishing.” This entailed throwing a fishing line through the school window while adults stood on the other side and attached small prizes, such as candy, to the line. </p>
+                                <blockquote class="county-quote">“The legacy of the historic Russell School is a testament to the enduring power of education and community, inspiring generations to strive for excellence and unity” - Friends of Russell Rosenwald School</blockquote>
+                                <p><strong>Black education in Durham was supported by entities who played crucial roles in creating an environment where Black individuals could work to overcome structural inequities. Some of these entities are below.</strong></p>
+                                <p><strong>Click each term to learn more.</strong></p>
+                                <div class="bullet-section" data-aos="fade-up" data-aos-delay=>
+                                        <div class="bullet-column">
+                                            <div class="dropdown-container">
+                                                <input type="checkbox" id="bullet1" class="bullet-toggle">
+                                                <label for="bullet1" class="bullet-title"><strong>Aaron McDuffie Moore</strong><i class="arrow"></i></label>
+                                                <div class="bullet-desc" data-related="bullet1">
+                                                    <div class="bullet-content">
+                                                    <div class="image-quote-container">
+                                                    <img src = "https://i.ibb.co/cknThJL/A-M-MOORE-M-D-PRESIDENT-NORTH-CAROLINA-MUTUAL.jpg">
+                                                    <div class= "quote-overlay">Aaron McDuffie Moore- Blake Hill-Saya, Rep. G.K. Butterfield, and C. Eileen Watts Welch: 
+                                                        MOORE BIOGRAPHY | Durham Colored Library (durhamcl.org) </div>                               
+                                                    </div>                               
+                                                    <p>Aaron McDuffie Moore, a prominent community leader in Durham, North Carolina, was a powerful force behind education, economic justice, and healthcare for Black citizens in Durham [28]. Born in 1863, Moore was Durham’s first Black physician and founded Lincoln Hospital, a critical healthcare institution for Black patients and a training hospital for doctors. He also secured Rosenwald funding and introduced the Jeanes Fund to Durham, further stimulating educational progress [72]. Dr. Moore contributed to the founding of Durham’s Black Wall Street, which inspired the rise of influential Black-owned businesses such as the historic NC Mutual Life Insurance Company and Mechanics and Farmers Bank [7].</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="bullet-column">
+                                        <div class="dropdown-container">
+                                            <input type="checkbox" id="bullet2" class="bullet-toggle">
+                                            <label for="bullet2" class="bullet-title"><strong>Hayti (pronounced Hay-tie)</strong><i class="arrow"></i></label>
+                                            <div class="bullet-desc" data-related="bullet2">
+                                                <div class="bullet-content">
+                                                <div class="image-quote-container">
+                                                <img src = "https://i.ibb.co/VBsQxfn/download.jpg">
+                                                <div class= "quote-overlay">Fayetteville St in Hayti in the 1940s [70]</div>                               
+                                                </div> 
+                                                    <p>Hayti (pronounced Hay-tie), from the 1880s to the 1940s, was the hub for commercial, economic, and social activity for Durham’s Black community [33]. With over 200 Black businesses, theaters, and a cultural scene that is known for its creation of the piedmont blues, Hayti was extremely successful and served as a self-sufficient enclave [33]. In the mid-twentieth century, the Hayti area was negatively impacted through urban renewal, which eliminated large portions of the neighborhood. The development of State Highway 147 through the center of Hayti also contributed to its decline [70]. Efforts like the Hayti Heritage Center now work to preserve the area’s cultural legacy and broader contributions to Durham’s history. Visit the Hayti Heritage Center website here: https://hayti.org/ [24].</p>
+                                    </div>
+                    
+                                        <p class = event-box-2>“Today there is a singular group in Durham where a black man may get up in the morning from a mattress made by black men, in a house which a black man built out of lumber which black men cut and planed; he may put on a suit which he bought at a colored haberdashery and socks knit as a colored mill; he may cook victuals from a colored grocery on a stove which black men fashioned; he may earn his leaving working for colored men, be sick in a colored hospital, and buried from a colored church; and the Negro insurance society will pay his widow enough to keep his children in a colored school. This is surely progress.” -Excerpt from W.E.B. Du Bois’ The Upbuilding of Black Durham. The success of the Negroes and Their Value to a Tolerant and Helpful Southern City</p>
+                                
+                                    </div>
+                    
+                                    </div>
+                                </div>
+                                <div class="bullet-column">
+                                    <div class="dropdown-container">
+                                        <input type="checkbox" id="bullet10" class="bullet-toggle">
+                                        <label for="bullet10" class="bullet-title"><strong>Durham Colored Library</strong><i class="arrow"></i></label>
+                                        <div class="bullet-desc" data-related="bullet10">
+                                            <div class="bullet-content">
+                                            <div class="image-quote-container">
+                                            <img src = "https://i.ibb.co/Vww0qzs/SW006-thumb.jpg">
+                                            <img src = "https://i.ibb.co/LDFTxrn/SW167-thumb.jpg">
+                                            <div class= "quote-overlay">CAPTION</div>                               
+                                            </div> 
+                                            <p>The Durham Colored Library was established in 1916. It is known today as the Stanford L. Warren Library. Dr. AM Moore and local entrepreneur, John Merrick, partnered together and established the library which has served as a valuable institution for showcasing African-American works in Durham [15]. Originally a Sunday School library, it evolved into a public community resource offering free books, hosting debates, home to the Negro Braille Magazine, and housing the esteemed Negro Collection [15]. These are some of the many testaments to the library’s role in promoting literacy and intellectual engagement among African Americans in Durham.</p>    
+                                        </div>
+                        
+                            
+                                </div>
+                        
+                                </div>
+                            </div>
+                                <div class="bullet-column">
+                                    <div class="dropdown-container">
+                                        <input type="checkbox" id="bullet3" class="bullet-toggle">
+                                        <label for="bullet3" class="bullet-title"><strong>The Jeanes Fund</strong><i class="arrow"></i></label>
+                                        <div class="bullet-desc" data-related="bullet3">
+                                            <div class="bullet-content">
+                                            <div class="image-quote-container">
+                                            <img src = "https://i.ibb.co/Gczs86V/Anna-jeanes-1.jpg">
+                                            <div class= "quote-overlay"> Anna T. Jeanes </div>                               
+                                            </div> 
+                                            <p>The Jeanes Fund was launched in 1907 by Anna T. Jeanes, and it aimed to improve educational opportunities for Black Americans in rural spaces throughout the South [16]. In Durham, the Jeanes Fund sponsored influential Black teachers who provided academic guidance, imparted practical skills, and ultimately served as assistants to school board officials to lead and direct the development of Black education [79]. Supported by a national group of racially integrated Board of Trustees, including prominent figures like Booker T. Washington and Andrew Carnegie, the Jeanes Fund left a lasting impact on educational equality and community development in Durham and beyond [79].
+                                            </p>
+                                        </div>                    
+                                </div>
+                            </div>
+                    
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> 
-        </div>
-    </div>
-
-    
-        <div class="county-section">
-            <h3 class="county-heading">Caswell County</h3>
-            <div class="carousel-container" id="carousel2">
-                <button class="carousel-button prev" onclick="moveSlides(-1, 2)">&#10094;</button>
-                <div class="carousel-slide">
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/mT7kLLw/Ocir1.jpg" alt="Image 1.1">
-                        <div class="caption">Beulah Rosenwald School, Caswell County 
-                            Building type: Two-Teaccher Type
-                            Funding Sources: 
-                            Black- $600
-                            Public- $1,500
-                            Rosenwald- $700</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/LNhB73B/Ocir2.jpg" alt="Image 2.1">
-                        <div class="caption">Blackwell Rosenwald School 
-                            Building Type: Two-Teacher Type 
-                            Funding Sources: 
-                            Black: $500 
-                            Public: $1,500
-                            Rosenwald: $700</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/0ryqRjg/Ocir3.jpg" alt="Image 3.1">
-                        <div class="caption">New Ephesus Rosenwald School 
-                            Building Plan: Two-Teacher Plan
-                            Funding Sources:
-                            Black: $500
-                            Public: $1,360
-                            Rosenwald: $700</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/DCyRckt/Ocir4.jpg" alt="Image 4.1">
-                        <div class="caption">Yanceyville Rosenwald School
-                            Building Plan: Two- Teacher Plan
-                            Funding Sources:
-                            Black: $838 
-                            Public: $2,890
-                            Rosenwald: $1,100</div>
-                    </div> 
-                </div>
-                <button class="carousel-button next" onclick="moveSlides(1, 2)">&#10095;</button>
-                <div class="carousel-indicators">
-                    <span class="indicator" onclick="currentSlide(1, 2)"></span>
-                    <span class="indicator" onclick="currentSlide(2, 2)"></span>
-                    <span class="indicator" onclick="currentSlide(3, 2)"></span>
-                    <span class="indicator" onclick="currentSlide(4, 2)"></span>
-                </div>
-            </div>
-            <div class="bullet-section" data-aos="fade-up" data-aos-delay=>
                 <div class="bullet-column">
                     <div class="dropdown-container">
-                        <input type="checkbox" id="bullet21" class="bullet-toggle">
-                        <label for="bullet21" class="bullet-title"><strong>Caswell County General History</strong><i class="arrow"></i></label>
-                        <div class="bullet-desc" data-related="bullet21">
-                            <div class="bullet-content">
-                            <div class="image-quote-container">
-                            <img src = "https://i.ibb.co/wzBNtsp/milton6cp.jpg">
-                            <div class= "quote-overlay">CAPTIONNNNNNN</div>                               
-                            </div>
-                                <ul>
-                                <li>It took Caswell County's Board of Education fifteen years to comply with the US Supreme Court's Brown V. Board of Education decision (1954). Before the integration, the black students went to the Caswell Training School. </li>
-                                <li>In 1969, the Board of Education implemented its first state-wide integrated plan.</li>
-                                <ul>
-                                    <li>1st-3rd grade students were assigned to Oakwood or Jones Elementary</li>
-                                    <li>4th-7th grade students were housed at Bartlett Yancey Elementary</li>
-                                    <li>8th-9th grade students were housed at N.L. Dillard Junior High School (formerly Caswell County Training School)</li>
-                                    <li>10th-12th grade students were housed at Bartlett Yancey High School.</li>
-                                </ul>
-                            </li>
-                                <li>A new project has been implemented in Caswell County, where memories of educational roots are captured in six Rosenwald schools (Beulah, Blackwell, Dortmund, New Ephesus, Milton, and Yancyville). The point of this project is to connect education and the arts to retell and relive Caswell’s African American past and how they debuted in the passport of traditions, doctrines, core values, and cultural indifferences.</li>
-                </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="bullet-column">
-                <div class="dropdown-container">
-                    <input type="checkbox" id="bullet22" class="bullet-toggle">
-                    <label for="bullet22" class="bullet-title"><strong>The Caswell Training School/High School (1934-1969)- Rosenwald School in Caswell County</strong><i class="arrow"></i></label>
-                    <div class="bullet-desc" data-related="bullet22">
-                        <div class="bullet-content">
-                        <div class="image-quote-container">
-                        <img src = "https://i.ibb.co/4M751FT/4913487865-97672533ae-o.jpg">
-                        <div class= "quote-overlay">CAPTIONNNNNNN</div>                               
+                        <input type="checkbox" id="bullet75" class="bullet-toggle">
+                        <label for="bullet75" class="bullet-title">
+                            <div class="title-container">
+                            <strong>Martin County</strong>
+                            <i class="arrow"></i>
                         </div>
-                            <ul>
-                            <li>The Caswell Training School was a school that operated from 1934 to 1969.</li>
-                            <li>In 1934, each of its four high school teachers held “A”-level certifications. By 1954, 64 percent of the 17 high school teachers were involved in graduate training beyond the state recertification requirements</li>
-                            <li>On March 2, 1951, classes began after a long battle for a proper building to house the school</li>
-                            <li>In 1954, Nicholas Longworth Dillard (Principal of Caswell Training School) supervised preparations for an accreditation visit by the Southern Association of Schools and Colleges. The preparations were proved successful, and CCTS became fully accredited. At the same time, the other county high schools attended by white students were not.</li>
-            </ul>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="bullet-column">
-            <div class="dropdown-container">
-                <input type="checkbox" id="bullet23" class="bullet-toggle">
-                <label for="bullet23" class="bullet-title"><strong>Nicholas Longworth Dillard (1906-1969)- Principal of Caswell Training School</strong><i class="arrow"></i></label>
-                <div class="bullet-desc" data-related="bullet23">
-                    <div class="bullet-content">
-                    <div class="image-quote-container">
-                    <img src = "https://i.ibb.co/Qkqpp9B/nldillardcpdrs.jpg">
-                    <div class= "quote-overlay">CAPTIONNNNNNN</div>                               
-                    </div>
-                        <ul>
-                        <li>Born in Leaksville (Now Eden), NC, in 1906</li>
-                        <li>Graduated from Shaw University in 1928</li>
-                        <li>In 1930, Dillard and three other teachers were employed at the Yancey School. The school had eighty pupils, grades one through seven. There were no high school black students, and thus, Dillard's fight for a school started.</li>
-                        <li>In 1954, Nicholas Longworth Dillard (Principal of Caswell Training School) supervised preparations for an accreditation visit by the Southern Association of Schools and Colleges. The preparations were proved successful, and CCTS became fully accredited. At the same time, the other county high schools attended by white students were not.</li>
-        </ul>
-            </div>
-        </div>
-        </div>
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/Vww0qzs/SW006-thumb.jpg">
+                        </div>
+                        </label>
+                    <div class="bullet-desc" data-related="bullet75">
+                    <p>More coming soon...</p> 
     </div>
-        </div>
+</div>
+</div>
 
-        </div>
+    <div class="bullet-column">
+        <div class="dropdown-container">
+            <input type="checkbox" id="bullet71" class="bullet-toggle">
+            <label for="bullet71" class="bullet-title">
+                <div class="title-container">
+                    <strong>Caswell County</strong>
+                    <i class="arrow"></i>
+                </div>
+                <div class="image-container">
+                    <img src="https://i.ibb.co/Vww0qzs/SW006-thumb.jpg">
+                </div>
+            </label>
+            <div class="bullet-desc" data-related="bullet71">
+                <div class="bullet-content">
+                    <p>More coming soon...</p>
+                </div>
+
+
+    </div>
+
+    </div>
+</div>
+     </div>
+
+
+</div>
+
+
     </section>
     
 

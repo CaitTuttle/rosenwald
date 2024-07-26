@@ -512,6 +512,18 @@ nav ul li a.active {
     text-align: left;
     font-size: 1.2em; /* Adjust the font size as needed */
 }
+.quote-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
 
 .county-section {
     margin-bottom: 20px;
@@ -832,12 +844,21 @@ ul ul {
 
 .bullet-title {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
     padding-right: 5px;
     font-size: 28px;
     font-weight: 900;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-container i.arrow {
+    margin-right: 10px; /* Adjust spacing as needed */
 }
 
 .bullet-title:hover .arrow {
@@ -851,6 +872,8 @@ ul ul {
     padding: 5px;
     transform: rotate(45deg);
     transition: all 0.3s; 
+    margin-right: 10px; /* Adjust spacing as needed */
+
 }
 
 .bullet-toggle:checked + .bullet-title .arrow {
@@ -912,4 +935,14 @@ ul ul {
 
 .bullet-center .dropdown-container {
     max-width: 400px;
+}
+
+.image-container {
+    display: block;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%; /* Ensure the image fits within the container */
 }

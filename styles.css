@@ -302,7 +302,7 @@ nav ul li a.active {
 .event-box {
     flex: 1;
     background: #fff;
-    border: 1px solid #580000;
+    border: 1px solid #920101;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(167, 14, 14, 0.323);
     padding: 20px;
@@ -357,6 +357,23 @@ nav ul li a.active {
 .event-box-alt h3 {
     margin-top: 0;
     font-size: 1.75em;
+    font-weight: bold;
+
+}
+
+.event-box-alt3 {
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.event-box-alt3 p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.event-box-alt3 h3 {
+    margin-top: 0;
     font-weight: bold;
 
 }
